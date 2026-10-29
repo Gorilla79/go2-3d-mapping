@@ -1,0 +1,120 @@
+<svg xml:lang="ko" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" width="1120" height="560" role="img" aria-labelledby="t d">
+<title id="t">에지 특징과 평면 특징(개념도)</title>
+<desc id="d">모서리와 문틀에서 만나는 두 벽을 지나는 LiDAR 스캔 링을 위에서 본 모습. 모서리와 문틀 근처의 곡률이 큰 점은 에지 특징, 평평한 벽을 따라 곡률이 작은 점은 평면 특징이다.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#46505d"/></marker><marker id="art" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0d7c86"/></marker><marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a1b"/></marker></defs>
+<rect width="1120" height="560" fill="#ffffff"/>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">에지 특징과 평면 특징</text>
+<text x="40" y="78" font-size="14" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">스캔 링 하나를 위에서 본 모습 · 링을 따라 계산한 국소 곡률 c_k</text>
+<path d="M120 470 L120 150 L700 150" fill="none" stroke="#131a24" stroke-width="10" stroke-linejoin="miter" opacity=".12"/>
+<rect x="430" y="140" width="80" height="20" fill="#131a24" opacity=".12"/>
+<g transform="translate(470 420)"><rect x="-24" y="-14" width="48" height="28" rx="7" fill="#1b2c45"/><circle r="6" fill="#dff0f0"/></g>
+<text x="470" y="460" font-size="12" font-weight="400" fill="#6b7581" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">센서</text>
+<circle cx="126" cy="460" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="448" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="436" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="424" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="412" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="400" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="388" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="376" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="364" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="352" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="340" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="328" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="316" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="304" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="292" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="280" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="268" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="256" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="244" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="232" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="220" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="208" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="196" r="4.5" fill="#0d7c86"/>
+<circle cx="126" cy="184" r="6" fill="#c98a1b"/>
+<circle cx="126" cy="172" r="6" fill="#c98a1b"/>
+<circle cx="126" cy="160" r="6" fill="#c98a1b"/>
+<circle cx="138" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="150" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="162" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="174" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="186" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="198" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="210" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="222" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="234" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="246" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="258" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="270" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="282" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="294" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="306" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="318" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="330" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="342" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="354" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="366" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="378" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="390" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="402" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="414" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="426" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="438" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="450" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="462" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="474" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="486" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="498" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="510" cy="156" r="6" fill="#c98a1b"/>
+<circle cx="522" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="534" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="546" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="558" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="570" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="582" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="594" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="606" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="618" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="630" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="642" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="654" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="666" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="678" cy="156" r="4.5" fill="#0d7c86"/>
+<circle cx="690" cy="156" r="4.5" fill="#0d7c86"/>
+<line x1="470" y1="420" x2="126" y2="460" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="126" y2="412" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="126" y2="364" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="126" y2="316" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="126" y2="268" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="126" y2="220" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="126" y2="172" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="162" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="210" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="258" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="306" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="354" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="402" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="450" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="498" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="546" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="594" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="642" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<line x1="470" y1="420" x2="690" y2="156" stroke="#c5ccd3" stroke-width="0.7" opacity=".7"/>
+<text x="176" y="214" font-size="13" font-weight="650" fill="#7a4f00" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">모서리</text>
+<text x="470" y="196" font-size="13" font-weight="650" fill="#7a4f00" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">문틀</text>
+<rect x="770" y="140" width="310" height="300" rx="14" fill="#eef2f4"/>
+<text x="792" y="172" font-size="15" font-weight="700" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">링을 따라 본 곡률</text>
+<circle cx="800" cy="206" r="6" fill="#c98a1b"/>
+<text x="816" y="211" font-size="13.5" font-weight="600" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">에지 특징 · c_k 큼</text>
+<circle cx="800" cy="240" r="4.5" fill="#0d7c86"/>
+<text x="816" y="245" font-size="13.5" font-weight="600" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">평면 특징 · c_k 작음</text>
+<text x="792" y="290" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">c_k는 점 k를</text>
+<text x="792" y="308" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">같은 링의 이웃과 비교합니다.</text>
+<text x="792" y="342" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">에지 → 점–직선 정합</text>
+<text x="792" y="360" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">평면 → 점–평면 정합</text>
+<text x="792" y="394" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">이 부분집합만</text>
+<text x="792" y="412" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">오도메트리 최적화에 들어갑니다.</text>
+<rect x="926" y="18" width="170" height="26" rx="5" fill="#ffffff" stroke="#c5ccd3" stroke-dasharray="4 3"/>
+<text x="1011" y="36" font-size="12" font-weight="700" fill="#6b7581" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif" letter-spacing="0.6">개념도 · SCHEMATIC</text>
+</svg>

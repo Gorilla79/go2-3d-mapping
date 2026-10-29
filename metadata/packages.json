@@ -1,0 +1,205 @@
+{
+  "schema": "go2-3d-mapping/packages@1",
+  "_note": "Publication decisions, one record per map (scripts/record-approval.mjs). evidence_type says who stands behind each: OPERATOR_DECLARATION (the map author/operator) or INSTITUTIONAL_PERMISSION (a written permission). publish lists what may be published.",
+  "approvals": [
+    {
+      "scope": "map:information/2F/fast-lio/release-0.1",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:information/3F/fast-lio/release-0.1",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:information/4F/lio-sam/release-0.1",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:information/6F/fast-lio/release-0.1",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:information/8F/fast-lio/release-0.1",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:engineering/1F/lio-sam/usb-2026-10-20",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:industry-cooperation/1F/lio-sam/usb-2026-10-20",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:information/1F/lio-sam/usb-2026-10-20",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:information/2F/lio-sam/usb-2026-10-20",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:information/3F/lio-sam/usb-2026-10-20",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    },
+    {
+      "scope": "map:information/5F/lio-sam/usb-2026-10-20",
+      "evidence_type": "OPERATOR_DECLARATION",
+      "publish": [
+        "WEB_VIEW",
+        "RENDERED_FIGURES",
+        "MAP_NPY_PLY",
+        "TRAJECTORY",
+        "BUILDING_ZIP"
+      ],
+      "approved_by": "map author and operator (Gorilla79)",
+      "approved_on": "2026-10-29",
+      "rights_basis": "Operator declaration (2026-10-29): the operator recorded these maps with the Go2 robot and built them (FAST-LIO, LIO-SAM), knows of no school regulation, research-funding contract or access-controlled area that restricts their publication, and has the authority to decide their publication scope. This is not an institutional permission.",
+      "spatial_publication": "approved",
+      "privacy_review": "approved",
+      "license": "CC-BY-NC-4.0",
+      "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
+    }
+  ],
+  "hosted": []
+}

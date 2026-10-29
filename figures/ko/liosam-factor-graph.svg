@@ -1,0 +1,54 @@
+<svg xml:lang="ko" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 520" width="1320" height="520" role="img" aria-labelledby="t d">
+<title id="t">LIO-SAM 팩터 그래프(개념도)</title>
+<desc id="d">키프레임 상태 변수 X0–X4가 한 줄로 있고, 이웃한 상태는 위쪽의 IMU 사전적분 팩터와 아래쪽의 LiDAR 오도메트리 팩터로 연결된다. X0에는 사전 팩터가 있고, 점선의 루프 클로저 팩터가 X4를 X0에 연결한다. 회색 GPS 팩터는 사용하지 않음을 나타낸다.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#46505d"/></marker><marker id="art" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0d7c86"/></marker><marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a1b"/></marker></defs>
+<rect width="1320" height="520" fill="#ffffff"/>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">팩터 그래프</text>
+<text x="40" y="78" font-size="14" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">변수 = 키프레임 상태 · 팩터 = 잔차 r_i와 공분산 Σ_i를 가진 구속 조건</text>
+<path d="M230 272 Q 305.0 190 380 272" fill="none" stroke="#0d7c86" stroke-width="2"/>
+<rect x="294.0" y="220" width="22" height="22" rx="3" fill="#0d7c86"/>
+<path d="M230 288 Q 305.0 370 380 288" fill="none" stroke="#1b2c45" stroke-width="2"/>
+<rect x="294.0" y="318" width="22" height="22" rx="3" fill="#1b2c45"/>
+<path d="M440 272 Q 515.0 190 590 272" fill="none" stroke="#0d7c86" stroke-width="2"/>
+<rect x="504.0" y="220" width="22" height="22" rx="3" fill="#0d7c86"/>
+<path d="M440 288 Q 515.0 370 590 288" fill="none" stroke="#1b2c45" stroke-width="2"/>
+<rect x="504.0" y="318" width="22" height="22" rx="3" fill="#1b2c45"/>
+<path d="M650 272 Q 725.0 190 800 272" fill="none" stroke="#0d7c86" stroke-width="2"/>
+<rect x="714.0" y="220" width="22" height="22" rx="3" fill="#0d7c86"/>
+<path d="M650 288 Q 725.0 370 800 288" fill="none" stroke="#1b2c45" stroke-width="2"/>
+<rect x="714.0" y="318" width="22" height="22" rx="3" fill="#1b2c45"/>
+<path d="M860 272 Q 935.0 190 1010 272" fill="none" stroke="#0d7c86" stroke-width="2"/>
+<rect x="924.0" y="220" width="22" height="22" rx="3" fill="#0d7c86"/>
+<path d="M860 288 Q 935.0 370 1010 288" fill="none" stroke="#1b2c45" stroke-width="2"/>
+<rect x="924.0" y="318" width="22" height="22" rx="3" fill="#1b2c45"/>
+<circle cx="200" cy="280" r="30" fill="#ffffff" stroke="#131a24" stroke-width="2.5"/>
+<text x="200" y="286" font-size="17" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X0</text>
+<circle cx="410" cy="280" r="30" fill="#ffffff" stroke="#131a24" stroke-width="2.5"/>
+<text x="410" y="286" font-size="17" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X1</text>
+<circle cx="620" cy="280" r="30" fill="#ffffff" stroke="#131a24" stroke-width="2.5"/>
+<text x="620" y="286" font-size="17" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X2</text>
+<circle cx="830" cy="280" r="30" fill="#ffffff" stroke="#131a24" stroke-width="2.5"/>
+<text x="830" y="286" font-size="17" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X3</text>
+<circle cx="1040" cy="280" r="30" fill="#ffffff" stroke="#131a24" stroke-width="2.5"/>
+<text x="1040" y="286" font-size="17" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X4</text>
+<line x1="120" y1="280" x2="170" y2="280" stroke="#6b7581" stroke-width="2"/>
+<rect x="104" y="269" width="22" height="22" rx="3" fill="#6b7581"/>
+<text x="115" y="320" font-size="12.5" font-weight="600" fill="#6b7581" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">사전</text>
+<path d="M1040 312 C 1000 470, 240 470, 200 312" fill="none" stroke="#c98a1b" stroke-width="2.5" stroke-dasharray="8 6"/>
+<rect x="609" y="418" width="22" height="22" rx="3" fill="#c98a1b"/>
+<text x="620" y="466" font-size="13.5" font-weight="650" fill="#7a4f00" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">루프 클로저 팩터(비국소)</text>
+<line x1="620" y1="250" x2="620" y2="150" stroke="#c5ccd3" stroke-width="2" stroke-dasharray="4 4"/>
+<rect x="609" y="128" width="22" height="22" rx="3" fill="#ffffff" stroke="#c5ccd3" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="645" y="144" font-size="13" font-weight="600" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">GPS 팩터 — 지원하지만 여기서는 사용하지 않음</text>
+<rect x="1114" y="120" width="170" height="160" rx="12" fill="#eef2f4"/>
+<rect x="1128" y="140" width="16" height="16" rx="3" fill="#0d7c86"/>
+<text x="1154" y="153" font-size="13" font-weight="500" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">IMU 사전적분</text>
+<rect x="1128" y="172" width="16" height="16" rx="3" fill="#1b2c45"/>
+<text x="1154" y="185" font-size="13" font-weight="500" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">LiDAR 오도메트리</text>
+<rect x="1128" y="204" width="16" height="16" rx="3" fill="#c98a1b"/>
+<text x="1154" y="217" font-size="13" font-weight="500" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">루프 클로저</text>
+<rect x="1128" y="236" width="16" height="16" rx="3" fill="#6b7581"/>
+<text x="1154" y="249" font-size="13" font-weight="500" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">사전</text>
+<rect x="1126" y="18" width="170" height="26" rx="5" fill="#ffffff" stroke="#c5ccd3" stroke-dasharray="4 3"/>
+<text x="1211" y="36" font-size="12" font-weight="700" fill="#6b7581" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif" letter-spacing="0.6">개념도 · SCHEMATIC</text>
+</svg>

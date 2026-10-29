@@ -1,0 +1,224 @@
+{
+  "_note": "Images of the robot for the home explorer. Schema: src/data/hardware.ts (HardwarePhoto). Provenance and rights: docs/PHASE6_HARDWARE_IMAGE_PROVENANCE.md. A real photo of the recording robot can be added with kind \"photo\".",
+  "photos": [
+    {
+      "id": "reference-render",
+      "kind": "render",
+      "publication": "approved",
+      "angle": "three-quarter",
+      "file": "figures/hardware/go2-dock-xt16-d435i-reference.png",
+      "sources": [
+        {
+          "file": "figures/hardware/go2-dock-xt16-d435i-reference-640.webp",
+          "width": 640
+        },
+        {
+          "file": "figures/hardware/go2-dock-xt16-d435i-reference-1200.webp",
+          "width": 1200
+        }
+      ],
+      "width": 1200,
+      "height": 1293,
+      "capturedAt": "not a photograph; render supplied by the operator on 2026-10-20",
+      "source": "Operator-supplied render GO2_DOCK_XT16_D435I_REFERENCE.png (Phase 6 kit, 2026-10-20)",
+      "rights": "Render, not a photograph. Published by the operator's declaration of rights (2026-10-29): the operator made the render or holds the right to publish and redistribute it. Unitree and Hesai marks belong to their owners.",
+      "matchesRecordingSetup": false,
+      "regions": [
+        {
+          "part": "body",
+          "certainty": "identified",
+          "polygon": [
+            [
+              0.275,
+              0.2413
+            ],
+            [
+              0.4667,
+              0.1949
+            ],
+            [
+              0.75,
+              0.1377
+            ],
+            [
+              0.8333,
+              0.1825
+            ],
+            [
+              0.825,
+              0.3635
+            ],
+            [
+              0.5833,
+              0.4377
+            ],
+            [
+              0.35,
+              0.4687
+            ],
+            [
+              0.275,
+              0.4084
+            ]
+          ],
+          "focus": [
+            0.2083,
+            0.0928,
+            0.6667,
+            0.4331
+          ]
+        },
+        {
+          "part": "dock",
+          "certainty": "needs-confirmation",
+          "polygon": [
+            [
+              0.44,
+              0.0835
+            ],
+            [
+              0.6583,
+              0.0913
+            ],
+            [
+              0.7467,
+              0.1361
+            ],
+            [
+              0.7433,
+              0.2026
+            ],
+            [
+              0.4917,
+              0.2104
+            ],
+            [
+              0.4417,
+              0.1825
+            ]
+          ],
+          "focus": [
+            0.4167,
+            0.0464,
+            0.3667,
+            0.2011
+          ]
+        },
+        {
+          "part": "lidar",
+          "certainty": "identified",
+          "polygon": [
+            [
+              0.25,
+              0.0464
+            ],
+            [
+              0.4333,
+              0.0464
+            ],
+            [
+              0.435,
+              0.1083
+            ],
+            [
+              0.435,
+              0.2289
+            ],
+            [
+              0.25,
+              0.2289
+            ],
+            [
+              0.2483,
+              0.1083
+            ]
+          ],
+          "focus": [
+            0.2083,
+            0.0155,
+            0.3,
+            0.2475
+          ]
+        },
+        {
+          "part": "camera",
+          "certainty": "operator-stated",
+          "polygon": [
+            [
+              0.05,
+              0.2722
+            ],
+            [
+              0.125,
+              0.2552
+            ],
+            [
+              0.1933,
+              0.2614
+            ],
+            [
+              0.205,
+              0.3032
+            ],
+            [
+              0.1708,
+              0.331
+            ],
+            [
+              0.0533,
+              0.3063
+            ]
+          ],
+          "focus": [
+            0.0333,
+            0.232,
+            0.275,
+            0.1237
+          ]
+        },
+        {
+          "part": "l1",
+          "certainty": "operator-stated",
+          "polygon": [
+            [
+              0.0942,
+              0.4764
+            ],
+            [
+              0.255,
+              0.4733
+            ],
+            [
+              0.26,
+              0.5336
+            ],
+            [
+              0.2183,
+              0.5739
+            ],
+            [
+              0.1167,
+              0.5739
+            ],
+            [
+              0.0917,
+              0.5336
+            ]
+          ],
+          "focus": [
+            0.05,
+            0.4331,
+            0.275,
+            0.1701
+          ]
+        }
+      ],
+      "rights_evidence": {
+        "evidence_type": "OPERATOR_DECLARATION",
+        "declared_by": "map author and operator (Gorilla79)",
+        "declared_on": "2026-10-29",
+        "scope": "publish and redistribute on the Go2-3D Mapping site, labelled as a render"
+      }
+    }
+  ]
+}

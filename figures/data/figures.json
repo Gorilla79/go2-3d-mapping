@@ -1,0 +1,272 @@
+{
+  "note": "Data-derived figures rendered from the public web derivatives by scripts/render-data-figures.mjs. Not the scientific canonical data.",
+  "figures": [
+    {
+      "id": "4F-clean",
+      "file": "figures/data/4F-liosam-high-height.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "4F",
+      "algorithm": "LIO-SAM",
+      "lod": "Detailed",
+      "points": 2877039,
+      "source": [
+        {
+          "path": "maps/4F/4F_detailed.xyz.bin",
+          "sha256": "8e15e0da24948d15f5ec54cd788a40064f286dfd6eee6a48a3a743d15178148e"
+        },
+        {
+          "path": "maps/4F/4F_detailed.rgb.bin",
+          "sha256": "1a3121279136f4aa8bd4bc89284e1af94f16eaa4eff14b140fe0c1c905aa431c"
+        }
+      ],
+      "trajectory": null,
+      "color": "height",
+      "point_size_px": 1.5,
+      "camera": {
+        "position_target_m": "-47.01,-68.23,42.69,-1.62,-10.14,0.14",
+        "view": "floor default (oblique)"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:22:43.335Z"
+    },
+    {
+      "id": "4F-trajectory",
+      "file": "figures/data/4F-liosam-high-trajectory.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "4F",
+      "algorithm": "LIO-SAM",
+      "lod": "Detailed",
+      "points": 2877039,
+      "source": [
+        {
+          "path": "maps/4F/4F_detailed.xyz.bin",
+          "sha256": "8e15e0da24948d15f5ec54cd788a40064f286dfd6eee6a48a3a743d15178148e"
+        },
+        {
+          "path": "maps/4F/4F_detailed.rgb.bin",
+          "sha256": "1a3121279136f4aa8bd4bc89284e1af94f16eaa4eff14b140fe0c1c905aa431c"
+        }
+      ],
+      "trajectory": {
+        "path": "maps/4F/4F_trajectory.bin",
+        "sha256": "0833943f254f59b28f3543be2df6c6eb32ebf42eaa25a137630a82e4a689c005"
+      },
+      "color": "mono",
+      "point_size_px": 1,
+      "camera": {
+        "position_target_m": "-47.01,-68.23,42.69,-1.62,-10.14,0.14",
+        "view": "floor default (oblique)"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:22:46.391Z"
+    },
+    {
+      "id": "4F-baked",
+      "file": "figures/data/4F-liosam-top-baked.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "4F",
+      "algorithm": "LIO-SAM",
+      "lod": "Detailed",
+      "points": 2877039,
+      "source": [
+        {
+          "path": "maps/4F/4F_detailed.xyz.bin",
+          "sha256": "8e15e0da24948d15f5ec54cd788a40064f286dfd6eee6a48a3a743d15178148e"
+        },
+        {
+          "path": "maps/4F/4F_detailed.rgb.bin",
+          "sha256": "1a3121279136f4aa8bd4bc89284e1af94f16eaa4eff14b140fe0c1c905aa431c"
+        }
+      ],
+      "trajectory": null,
+      "color": "baked",
+      "point_size_px": 1.5,
+      "camera": {
+        "position_target_m": "-0.99,-10.26,77.41,-0.92,-10.26,0.78",
+        "view": "Top view"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:22:49.527Z"
+    },
+    {
+      "id": "3F-clean",
+      "file": "figures/data/3F-fastlio-high-height.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "3F",
+      "algorithm": "FAST-LIO",
+      "lod": "Full",
+      "points": 818961,
+      "source": [
+        {
+          "path": "maps/3F/3F_full.bin",
+          "sha256": "c2860956303d37f11ba4ec304e525282807c9e1cba87af7d3ed4ce4b6deb3ed4"
+        }
+      ],
+      "trajectory": null,
+      "color": "height",
+      "point_size_px": 2,
+      "camera": {
+        "position_target_m": "-29.4,-54.78,53.6,-2.06,3.84,-0.68",
+        "view": "floor default (oblique)"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:22:52.791Z"
+    },
+    {
+      "id": "2F-clean",
+      "file": "figures/data/2F-fastlio-high-height.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "2F",
+      "algorithm": "FAST-LIO",
+      "lod": "Full",
+      "points": 675625,
+      "source": [
+        {
+          "path": "maps/2F/2F_full.bin",
+          "sha256": "5192796a4e1c14a185550e2a04271550b6eb1df62a20a977cf24bbde0d6c73e6"
+        }
+      ],
+      "trajectory": null,
+      "color": "height",
+      "point_size_px": 2,
+      "camera": {
+        "position_target_m": "-11.89,-24.62,32.13,0.15,-3.76,1.31",
+        "view": "floor default (oblique)"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:22:56.094Z"
+    },
+    {
+      "id": "6F-clean",
+      "file": "figures/data/6F-fastlio-high-height.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "6F",
+      "algorithm": "FAST-LIO",
+      "lod": "Full",
+      "points": 546898,
+      "source": [
+        {
+          "path": "maps/6F/6F_full.bin",
+          "sha256": "f3e45e58db33a592fd6398bdb6270037419db0765b35ce624c79d621b616f74b"
+        }
+      ],
+      "trajectory": null,
+      "color": "height",
+      "point_size_px": 2,
+      "camera": {
+        "position_target_m": "-29.96,-53.94,53.57,-3.34,3.15,0.71",
+        "view": "floor default (oblique)"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:22:59.303Z"
+    },
+    {
+      "id": "8F-clean",
+      "file": "figures/data/8F-fastlio-high-height.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "8F",
+      "algorithm": "FAST-LIO",
+      "lod": "Full",
+      "points": 544672,
+      "source": [
+        {
+          "path": "maps/8F/8F_full.bin",
+          "sha256": "4ce0af8d6e3fb42b93de956ac267e8f5f05e63a64482175571b15fbdb7f717fe"
+        }
+      ],
+      "trajectory": null,
+      "color": "height",
+      "point_size_px": 2,
+      "camera": {
+        "position_target_m": "-29.37,-54.49,53.51,-2.83,2.42,0.82",
+        "view": "floor default (oblique)"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:23:02.537Z"
+    },
+    {
+      "id": "4F-lod-low",
+      "file": "figures/data/4F-lod-low.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "4F",
+      "algorithm": "LIO-SAM",
+      "lod": "Preview",
+      "points": 130736,
+      "source": [
+        {
+          "path": "maps/4F/4F_preview.xyz.bin",
+          "sha256": "e0e1b53bf515a400707e03b5cc46a3ba93ad86eb0d7d19a1743ca25d74c39f73"
+        },
+        {
+          "path": "maps/4F/4F_preview.rgb.bin",
+          "sha256": "4dd7ddf5148af41192a91d8047c4de945b3b8db0efd2afb5205a82a9f86b7f52"
+        }
+      ],
+      "trajectory": null,
+      "color": "height",
+      "point_size_px": 2,
+      "camera": {
+        "position_target_m": "-10.5,-25,11.5,-1.7,-10,0.3",
+        "view": "fixed close-up"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:23:05.762Z"
+    },
+    {
+      "id": "4F-lod-medium",
+      "file": "figures/data/4F-lod-medium.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "4F",
+      "algorithm": "LIO-SAM",
+      "lod": "Medium",
+      "points": 889798,
+      "source": [
+        {
+          "path": "maps/4F/4F_medium.xyz.bin",
+          "sha256": "6975b5510881ba672c4efb3cf37c09f66ab842f7324e814277be41f62349f134"
+        },
+        {
+          "path": "maps/4F/4F_medium.rgb.bin",
+          "sha256": "ffa9a112cc2e05ab58f3b8e02d6686e03b414a8884bf3940b0ca968a18e6801d"
+        }
+      ],
+      "trajectory": null,
+      "color": "height",
+      "point_size_px": 2,
+      "camera": {
+        "position_target_m": "-10.5,-25,11.5,-1.7,-10,0.3",
+        "view": "fixed close-up"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:23:09.153Z"
+    },
+    {
+      "id": "4F-lod-high",
+      "file": "figures/data/4F-lod-high.webp",
+      "nature": "measured (rendered from public web derivative)",
+      "floor": "4F",
+      "algorithm": "LIO-SAM",
+      "lod": "Detailed",
+      "points": 2877039,
+      "source": [
+        {
+          "path": "maps/4F/4F_detailed.xyz.bin",
+          "sha256": "8e15e0da24948d15f5ec54cd788a40064f286dfd6eee6a48a3a743d15178148e"
+        },
+        {
+          "path": "maps/4F/4F_detailed.rgb.bin",
+          "sha256": "1a3121279136f4aa8bd4bc89284e1af94f16eaa4eff14b140fe0c1c905aa431c"
+        }
+      ],
+      "trajectory": null,
+      "color": "height",
+      "point_size_px": 2,
+      "camera": {
+        "position_target_m": "-10.5,-25,11.5,-1.7,-10,0.3",
+        "view": "fixed close-up"
+      },
+      "renderer": "site viewer (Three.js WebGL), Capture view, 1600×1000 px canvas",
+      "rendered_at": "2026-10-18T08:23:12.595Z"
+    }
+  ]
+}

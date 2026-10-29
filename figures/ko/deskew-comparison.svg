@@ -1,0 +1,128 @@
+<svg xml:lang="ko" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" width="1120" height="560" role="img" aria-labelledby="t d">
+<title id="t">LiDAR 움직임 왜곡과 왜곡 보정(개념도)</title>
+<desc id="d">왼쪽: 한 번의 스캔 동안 로봇이 이동하며 회전하므로 곧은 벽 위의 점들이 서로 다른 자세에서 측정되어 휘어 보인다. 오른쪽: 각 점을 측정 시각의 IMU 전파 포즈로 스캔 끝 시각에 옮기면 벽이 다시 곧아진다. 실측 데이터가 아니다.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#46505d"/></marker><marker id="art" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0d7c86"/></marker><marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a1b"/></marker></defs>
+<rect width="1120" height="560" fill="#ffffff"/>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">스캔에 왜곡 보정이 필요한 이유</text>
+<text x="40" y="78" font-size="14" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">개념 설명용 — 실측 스캔 데이터 아님</text>
+<rect x="40" y="104" width="480" height="420" rx="16" fill="#eef2f4"/>
+<text x="64" y="136" font-size="16" font-weight="700" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">원시 스캔</text>
+<text x="64" y="156" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">서로 다른 자세에서 측정한 점</text>
+<line x1="120" y1="200" x2="470" y2="200" stroke="#131a24" stroke-width="3" stroke-dasharray="2 6" opacity=".35"/>
+<text x="476" y="196" font-size="12" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">실제 벽</text>
+<g transform="translate(150 430) rotate(-12)" opacity="0.35"><rect x="-20" y="-12" width="40" height="24" rx="6" fill="#1b2c45"/><circle cx="0" cy="0" r="5" fill="#dff0f0"/></g>
+<text x="150" y="466" font-size="12" font-weight="650" fill="#46505d" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">t0</text>
+<g transform="translate(230 405) rotate(-2)" opacity="0.57"><rect x="-20" y="-12" width="40" height="24" rx="6" fill="#1b2c45"/><circle cx="0" cy="0" r="5" fill="#dff0f0"/></g>
+<text x="230" y="441" font-size="12" font-weight="650" fill="#46505d" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">t1</text>
+<g transform="translate(310 390) rotate(9)" opacity="0.78"><rect x="-20" y="-12" width="40" height="24" rx="6" fill="#1b2c45"/><circle cx="0" cy="0" r="5" fill="#dff0f0"/></g>
+<text x="310" y="426" font-size="12" font-weight="650" fill="#46505d" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">t2</text>
+<g transform="translate(390 392) rotate(20)" opacity="1.00"><rect x="-20" y="-12" width="40" height="24" rx="6" fill="#1b2c45"/><circle cx="0" cy="0" r="5" fill="#dff0f0"/></g>
+<text x="390" y="428" font-size="12" font-weight="650" fill="#46505d" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">t_e</text>
+<line x1="150" y1="430" x2="130.0" y2="200.0" stroke="#c98a1b" stroke-width="0.8" opacity=".35"/>
+<line x1="150" y1="430" x2="180.8" y2="208.6" stroke="#c98a1b" stroke-width="0.8" opacity=".35"/>
+<line x1="230" y1="405" x2="231.5" y2="215.6" stroke="#c98a1b" stroke-width="0.8" opacity=".35"/>
+<line x1="230" y1="405" x2="282.3" y2="219.6" stroke="#c98a1b" stroke-width="0.8" opacity=".35"/>
+<line x1="310" y1="390" x2="333.1" y2="219.8" stroke="#c98a1b" stroke-width="0.8" opacity=".35"/>
+<line x1="390" y1="392" x2="383.8" y2="215.9" stroke="#c98a1b" stroke-width="0.8" opacity=".35"/>
+<line x1="390" y1="392" x2="434.6" y2="208.3" stroke="#c98a1b" stroke-width="0.8" opacity=".35"/>
+<circle cx="130.0" cy="200.0" r="3.2" fill="#c98a1b"/>
+<circle cx="138.5" cy="201.5" r="3.2" fill="#c98a1b"/>
+<circle cx="146.9" cy="202.9" r="3.2" fill="#c98a1b"/>
+<circle cx="155.4" cy="204.4" r="3.2" fill="#c98a1b"/>
+<circle cx="163.8" cy="205.8" r="3.2" fill="#c98a1b"/>
+<circle cx="172.3" cy="207.2" r="3.2" fill="#c98a1b"/>
+<circle cx="180.8" cy="208.6" r="3.2" fill="#c98a1b"/>
+<circle cx="189.2" cy="209.9" r="3.2" fill="#c98a1b"/>
+<circle cx="197.7" cy="211.2" r="3.2" fill="#c98a1b"/>
+<circle cx="206.2" cy="212.4" r="3.2" fill="#c98a1b"/>
+<circle cx="214.6" cy="213.5" r="3.2" fill="#c98a1b"/>
+<circle cx="223.1" cy="214.6" r="3.2" fill="#c98a1b"/>
+<circle cx="231.5" cy="215.6" r="3.2" fill="#c98a1b"/>
+<circle cx="240.0" cy="216.5" r="3.2" fill="#c98a1b"/>
+<circle cx="248.5" cy="217.3" r="3.2" fill="#c98a1b"/>
+<circle cx="256.9" cy="218.0" r="3.2" fill="#c98a1b"/>
+<circle cx="265.4" cy="218.7" r="3.2" fill="#c98a1b"/>
+<circle cx="273.8" cy="219.2" r="3.2" fill="#c98a1b"/>
+<circle cx="282.3" cy="219.6" r="3.2" fill="#c98a1b"/>
+<circle cx="290.8" cy="219.9" r="3.2" fill="#c98a1b"/>
+<circle cx="299.2" cy="220.1" r="3.2" fill="#c98a1b"/>
+<circle cx="307.7" cy="220.2" r="3.2" fill="#c98a1b"/>
+<circle cx="316.2" cy="220.2" r="3.2" fill="#c98a1b"/>
+<circle cx="324.6" cy="220.1" r="3.2" fill="#c98a1b"/>
+<circle cx="333.1" cy="219.8" r="3.2" fill="#c98a1b"/>
+<circle cx="341.5" cy="219.5" r="3.2" fill="#c98a1b"/>
+<circle cx="350.0" cy="219.0" r="3.2" fill="#c98a1b"/>
+<circle cx="358.5" cy="218.4" r="3.2" fill="#c98a1b"/>
+<circle cx="366.9" cy="217.7" r="3.2" fill="#c98a1b"/>
+<circle cx="375.4" cy="216.9" r="3.2" fill="#c98a1b"/>
+<circle cx="383.8" cy="215.9" r="3.2" fill="#c98a1b"/>
+<circle cx="392.3" cy="214.9" r="3.2" fill="#c98a1b"/>
+<circle cx="400.8" cy="213.8" r="3.2" fill="#c98a1b"/>
+<circle cx="409.2" cy="212.6" r="3.2" fill="#c98a1b"/>
+<circle cx="417.7" cy="211.2" r="3.2" fill="#c98a1b"/>
+<circle cx="426.2" cy="209.8" r="3.2" fill="#c98a1b"/>
+<circle cx="434.6" cy="208.3" r="3.2" fill="#c98a1b"/>
+<circle cx="443.1" cy="206.8" r="3.2" fill="#c98a1b"/>
+<circle cx="451.5" cy="205.1" r="3.2" fill="#c98a1b"/>
+<circle cx="460.0" cy="203.4" r="3.2" fill="#c98a1b"/>
+<text x="290" y="268" font-size="13" font-weight="650" fill="#7a4f00" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">벽이 휘어 보임</text>
+<path d="M150 470 C 230 440, 320 415, 400 400" fill="none" stroke="#1b2c45" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ar)" opacity=".6"/>
+<text x="64" y="506" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">스캔 도중 로봇이 이동하며 회전</text>
+<rect x="540" y="270" width="96" height="86" rx="12" fill="#ffffff" stroke="#c5ccd3"/>
+<text x="588" y="296" font-size="12.5" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">IMU 포즈</text>
+<text x="588" y="313" font-size="12.5" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">점마다</text>
+<text x="588" y="334" font-size="12" font-weight="400" fill="#0d7c86" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">T(t_j) → t_e</text>
+<line x1="522" y1="313" x2="538" y2="313" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="637" y1="313" x2="654" y2="313" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="656" y="104" width="424" height="420" rx="16" fill="#dff0f0"/>
+<text x="680" y="136" font-size="16" font-weight="700" fill="#06555c" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">왜곡 보정 후</text>
+<text x="680" y="156" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">모든 점을 스캔 끝 시각 t_e 기준으로 표현</text>
+<line x1="700" y1="200" x2="1040" y2="200" stroke="#131a24" stroke-width="3" stroke-dasharray="2 6" opacity=".25"/>
+<circle cx="705.0" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="713.5" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="721.9" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="730.4" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="738.8" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="747.3" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="755.8" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="764.2" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="772.7" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="781.2" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="789.6" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="798.1" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="806.5" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="815.0" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="823.5" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="831.9" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="840.4" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="848.8" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="857.3" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="865.8" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="874.2" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="882.7" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="891.2" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="899.6" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="908.1" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="916.5" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="925.0" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="933.5" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="941.9" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="950.4" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="958.8" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="967.3" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="975.8" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="984.2" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="992.7" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="1001.2" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="1009.6" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="1018.1" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="1026.5" cy="200" r="3.2" fill="#0d7c86"/>
+<circle cx="1035.0" cy="200" r="3.2" fill="#0d7c86"/>
+<text x="868" y="236" font-size="13" font-weight="650" fill="#06555c" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">곧은 벽이 복원됨</text>
+<g transform="translate(900 392) rotate(20)"><rect x="-20" y="-12" width="40" height="24" rx="6" fill="#1b2c45"/><circle cx="0" cy="0" r="5" fill="#dff0f0"/></g>
+<text x="900" y="430" font-size="12" font-weight="650" fill="#46505d" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">t_e</text>
+<text x="680" y="470" font-size="13" font-weight="400" fill="#131a24" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace">p_L^e = T_IL⁻¹ · T_WI(t_e)⁻¹</text>
+<text x="728" y="490" font-size="13" font-weight="400" fill="#131a24" text-anchor="start" font-family="ui-monospace, Menlo, Consolas, monospace">· T_WI(t_j) · T_IL · p_L,j</text>
+<rect x="926" y="18" width="170" height="26" rx="5" fill="#ffffff" stroke="#c5ccd3" stroke-dasharray="4 3"/>
+<text x="1011" y="36" font-size="12" font-weight="700" fill="#6b7581" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif" letter-spacing="0.6">개념도 · SCHEMATIC</text>
+</svg>

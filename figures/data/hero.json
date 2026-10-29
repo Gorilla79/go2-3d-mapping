@@ -1,0 +1,70 @@
+{
+  "id": "home-hero-4f",
+  "files": [
+    "figures/data/home-hero-4f.webp",
+    "figures/data/home-hero-4f-1200.webp"
+  ],
+  "size": [
+    2400,
+    1260
+  ],
+  "source": {
+    "points": {
+      "path": "maps/4F/4F_detailed.xyz.bin",
+      "count": 2877039,
+      "drawn": 1970227,
+      "sha256": "8e15e0da24948d15f5ec54cd788a40064f286dfd6eee6a48a3a743d15178148e"
+    },
+    "trajectory": {
+      "path": "maps/4F/4F_trajectory.bin",
+      "poses": 4013,
+      "sha256": "0833943f254f59b28f3543be2df6c6eb32ebf42eaa25a137630a82e4a689c005"
+    }
+  },
+  "colour": "height, viridis (same polynomial as the 3-D viewer) from the floor to the section cut; eye-dome lighting",
+  "trajectory_drawn": false,
+  "section_cut": {
+    "z_max_m": 1.222,
+    "note": "display only: points above the cut (ceiling) are not drawn; the data is unchanged"
+  },
+  "camera": {
+    "eye": [
+      -44,
+      -44,
+      58
+    ],
+    "target": [
+      -9,
+      -2,
+      -2
+    ],
+    "fov_y_deg": 30,
+    "up": [
+      0,
+      0,
+      1
+    ]
+  },
+  "anchors": {
+    "start": [
+      0.5652,
+      0.3513
+    ],
+    "end": [
+      0.5688,
+      0.3511
+    ],
+    "scale10m": [
+      [
+        0.5406,
+        0.1978
+      ],
+      [
+        0.4744,
+        0.1055
+      ]
+    ]
+  },
+  "rendered": "2026-10-20",
+  "script": "scripts/render-hero.py"
+}

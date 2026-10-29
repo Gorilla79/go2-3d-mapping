@@ -1,0 +1,66 @@
+<svg xml:lang="ko" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470" width="1280" height="470" role="img" aria-labelledby="t d">
+<title id="t">LIO-SAM 파이프라인(개념도)</title>
+<desc id="d">IMU 사전적분이 스캔 왜곡을 보정하고 초기 추정값을 준다. 에지·평면 특징이 서브 키프레임에 대한 LiDAR 오도메트리로 들어가고, 키프레임 상태는 iSAM2 팩터 그래프에서 IMU·오도메트리·루프 클로저 팩터로 연결되어 최적화된다. GPS 팩터는 지원되지만 사용하지 않았다.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#46505d"/></marker><marker id="art" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0d7c86"/></marker><marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a1b"/></marker></defs>
+<rect width="1280" height="470" fill="#ffffff"/>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#131a24" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">LIO-SAM 처리 흐름</text>
+<text x="40" y="78" font-size="14" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">4F에 사용(LiDAR + IMU, GPS 없음)</text>
+<rect x="40" y="130" width="170" height="74" rx="12" fill="#dff0f0"/>
+<text x="125.0" y="161.0" font-size="16" font-weight="650" fill="#06555c" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">LiDAR</text>
+<text x="125.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">스캔</text>
+<rect x="40" y="300" width="170" height="74" rx="12" fill="#f6e3bf"/>
+<text x="125.0" y="331.0" font-size="16" font-weight="650" fill="#6b4500" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">IMU</text>
+<text x="125.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">ω_m, a_m</text>
+<rect x="260" y="300" width="210" height="74" rx="12" fill="#eef2f4"/>
+<text x="365.0" y="331.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">IMU 사전적분</text>
+<text x="365.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">ΔR, Δv, Δp</text>
+<rect x="260" y="130" width="210" height="74" rx="12" fill="#eef2f4"/>
+<text x="365.0" y="161.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">왜곡 보정 + 특징</text>
+<text x="365.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">에지 / 평면</text>
+<rect x="520" y="130" width="220" height="74" rx="12" fill="#eef2f4"/>
+<text x="630.0" y="161.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">LiDAR 오도메트리</text>
+<text x="630.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">스캔–서브 키프레임</text>
+<rect x="790" y="116" width="240" height="272" rx="16" fill="#e4e9f1"/>
+<text x="910" y="146" font-size="16" font-weight="700" fill="#131a24" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">팩터 그래프(iSAM2)</text>
+<circle cx="826" cy="250" r="15" fill="#ffffff" stroke="#1b2c45" stroke-width="2"/>
+<text x="826" y="255" font-size="12" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X0</text>
+<circle cx="876" cy="250" r="15" fill="#ffffff" stroke="#1b2c45" stroke-width="2"/>
+<text x="876" y="255" font-size="12" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X1</text>
+<line x1="841" y1="250" x2="861" y2="250" stroke="#1b2c45" stroke-width="2"/>
+<circle cx="926" cy="250" r="15" fill="#ffffff" stroke="#1b2c45" stroke-width="2"/>
+<text x="926" y="255" font-size="12" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X2</text>
+<line x1="891" y1="250" x2="911" y2="250" stroke="#1b2c45" stroke-width="2"/>
+<circle cx="976" cy="250" r="15" fill="#ffffff" stroke="#1b2c45" stroke-width="2"/>
+<text x="976" y="255" font-size="12" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X3</text>
+<line x1="941" y1="250" x2="961" y2="250" stroke="#1b2c45" stroke-width="2"/>
+<path d="M826 266 C 840 320, 962 320, 976 266" fill="none" stroke="#c98a1b" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="901" y="334" font-size="12" font-weight="650" fill="#7a4f00" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">루프 팩터</text>
+<text x="910" y="196" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">키프레임 상태</text>
+<rect x="520" y="300" width="220" height="74" rx="12" fill="#f6e3bf"/>
+<text x="630.0" y="331.0" font-size="16" font-weight="650" fill="#6b4500" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">루프 검출</text>
+<text x="630.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">가까운 키 포즈 + ICP</text>
+<rect x="1076" y="130" width="170" height="74" rx="12" fill="#eef2f4"/>
+<text x="1161.0" y="161.0" font-size="15" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">최적화된 포즈</text>
+<text x="1161.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">모든 키프레임</text>
+<rect x="1076" y="300" width="170" height="74" rx="12" fill="#dff0f0"/>
+<text x="1161.0" y="331.0" font-size="16" font-weight="650" fill="#06555c" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">전역 지도</text>
+<text x="1161.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">다시 투영한 점군</text>
+<rect x="830" y="406" width="160" height="40" rx="10" fill="#ffffff" stroke="#c5ccd3" stroke-dasharray="4 3"/>
+<text x="910" y="431" font-size="12.5" font-weight="600" fill="#6b7581" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">GPS 팩터 · 사용 안 함</text>
+<line x1="910" y1="404" x2="910" y2="390" stroke="#c5ccd3" stroke-width="1.5" stroke-dasharray="3 3"/>
+<line x1="212" y1="167" x2="256" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="472" y1="167" x2="516" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="212" y1="337" x2="256" y2="337" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M365 298 L365 208" fill="none" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="372" y="262" font-size="12" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">왜곡 보정, 초기 추정값</text>
+<line x1="742" y1="167" x2="786" y2="200" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="744" y="222" font-size="11.5" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">오도메트리 팩터</text>
+<path d="M472 350 C 600 410, 760 360, 820 280" fill="none" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="600" y="412" font-size="11.5" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">IMU 팩터</text>
+<line x1="742" y1="337" x2="786" y2="300" stroke="#c98a1b" stroke-width="1.6" marker-end="url(#ara)"/>
+<line x1="1032" y1="200" x2="1072" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="1161" y1="206" x2="1161" y2="296" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="40" y="452" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif">최적화된 IMU 바이어스는 사전적분으로 되돌아갑니다. GPS는 LIO-SAM이 지원하지만 이 실내 데이터셋에서는 사용하지 않았습니다.</text>
+<rect x="1086" y="18" width="170" height="26" rx="5" fill="#ffffff" stroke="#c5ccd3" stroke-dasharray="4 3"/>
+<text x="1171" y="36" font-size="12" font-weight="700" fill="#6b7581" text-anchor="middle" font-family="Inter, 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', ui-sans-serif, system-ui, sans-serif" letter-spacing="0.6">개념도 · SCHEMATIC</text>
+</svg>

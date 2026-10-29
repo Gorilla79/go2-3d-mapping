@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Go2-3D Mapping</title>
+<script>
+(function () {
+  var base = "/go2-3d-mapping/";
+  var p = location.pathname;
+  if (p.indexOf(base) !== 0) return;
+  var rest = p.slice(base.length).replace(/^\/+/, '');
+  if (!rest || /\./.test(rest)) return;
+  location.replace(base + '#/' + rest);
+})();
+</script>
+<style>body{font:16px/1.5 system-ui,sans-serif;margin:0 auto;padding:2rem 16px;max-width:40rem;color:#1d2433;background:#fff}@media (prefers-color-scheme: dark){body{color:#e6e9ef;background:#121722}a{color:#9cc3ff}}</style>
+</head>
+<body>
+<p>페이지나 파일을 찾을 수 없습니다. <a href="/go2-3d-mapping/">Go2-3D Mapping 처음으로</a></p>
+<p lang="en">The page or file was not found. <a href="/go2-3d-mapping/">Go2-3D Mapping start page</a></p>
+</body>
+</html>

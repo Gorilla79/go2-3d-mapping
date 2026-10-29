@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470" width="1280" height="470" role="img" aria-labelledby="t d">
+<title id="t">FAST-LIO pipeline (schematic)</title>
+<desc id="d">LiDAR points are preprocessed and deskewed using IMU propagation; an iterated Kalman update computes point-to-plane residuals against the ikd-Tree map; the converged pose is output and the scan is inserted into the map.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#46505d"/></marker><marker id="art" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0d7c86"/></marker><marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a1b"/></marker></defs>
+<rect width="1280" height="470" fill="#ffffff"/>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#131a24" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">FAST-LIO processing flow</text>
+<text x="40" y="78" font-size="14" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">as used for 2F · 3F · 6F · 8F (FAST-LIO2-lineage ROS 2 package)</text>
+<rect x="40" y="130" width="170" height="74" rx="12" fill="#dff0f0"/>
+<text x="125.0" y="161.0" font-size="16" font-weight="650" fill="#06555c" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">LiDAR</text>
+<text x="125.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">/lidar_points</text>
+<rect x="40" y="300" width="170" height="74" rx="12" fill="#f6e3bf"/>
+<text x="125.0" y="331.0" font-size="16" font-weight="650" fill="#6b4500" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">IMU</text>
+<text x="125.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">/utlidar/imu_corrected</text>
+<rect x="260" y="130" width="200" height="74" rx="12" fill="#eef2f4"/>
+<text x="360.0" y="161.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Preprocess</text>
+<text x="360.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">per-point time · blind 0.5 m</text>
+<rect x="260" y="300" width="200" height="74" rx="12" fill="#eef2f4"/>
+<text x="360.0" y="331.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Forward propagation</text>
+<text x="360.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">predict x̂, P</text>
+<rect x="510" y="130" width="200" height="74" rx="12" fill="#eef2f4"/>
+<text x="610.0" y="161.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Deskew</text>
+<text x="610.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">backward propagation</text>
+<rect x="560" y="222" width="150" height="62" rx="12" fill="#eef2f4"/>
+<text x="635.0" y="247.0" font-size="15" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Downsample</text>
+<text x="635.0" y="268.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">voxel 0.3 m</text>
+<rect x="760" y="116" width="250" height="272" rx="16" fill="#e4e9f1"/>
+<text x="885" y="146" font-size="16" font-weight="700" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Iterated EKF update</text>
+<rect x="780" y="162" width="210" height="64" rx="12" fill="#ffffff"/>
+<text x="885.0" y="188.0" font-size="15" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Point-to-plane</text>
+<text x="885.0" y="209.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">residuals r_j</text>
+<rect x="780" y="240" width="210" height="64" rx="12" fill="#ffffff"/>
+<text x="885.0" y="266.0" font-size="15" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Kalman correction</text>
+<text x="885.0" y="287.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">repeat ≤ 3×</text>
+<path d="M885 228 L885 236" fill="none" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M992 272 C 1004 250, 1004 214, 994 196" fill="none" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="780" y="318" width="210" height="56" rx="12" fill="#dff0f0"/>
+<text x="885.0" y="340.0" font-size="15" font-weight="650" fill="#06555c" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">ikd-Tree map</text>
+<text x="885.0" y="361.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">5-NN search</text>
+<path d="M820 316 L820 228" fill="none" stroke="#0d7c86" stroke-width="1.6" marker-end="url(#art)"/>
+<rect x="1060" y="130" width="180" height="74" rx="12" fill="#eef2f4"/>
+<text x="1150.0" y="161.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Pose</text>
+<text x="1150.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">odometry x*</text>
+<rect x="1060" y="300" width="180" height="74" rx="12" fill="#dff0f0"/>
+<text x="1150.0" y="331.0" font-size="16" font-weight="650" fill="#06555c" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Map insertion</text>
+<text x="1150.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">on-tree downsampling</text>
+<line x1="212" y1="167" x2="256" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="462" y1="167" x2="506" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="212" y1="337" x2="256" y2="337" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M360 298 C 360 240, 470 222, 532 208" fill="none" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="372" y="254" font-size="12" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">IMU poses</text>
+<line x1="635" y1="205" x2="635" y2="219" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="712" y1="252" x2="776" y2="210" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M462 337 C 620 337, 690 300, 776 282" fill="none" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="560" y="356" font-size="12" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">prior x̂, P</text>
+<line x1="992" y1="190" x2="1056" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="1150" y1="206" x2="1150" y2="296" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M1058 350 L994 350" fill="none" stroke="#0d7c86" stroke-width="1.6" marker-end="url(#art)"/>
+<text x="40" y="430" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">No feature extraction (raw points registered directly) · no loop closure · extrinsic held fixed (extrinsic_est_en: false)</text>
+<rect x="1138" y="18" width="118" height="26" rx="5" fill="#ffffff" stroke="#c5ccd3" stroke-dasharray="4 3"/>
+<text x="1197" y="36" font-size="12" font-weight="700" fill="#6b7581" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" letter-spacing="1.6">SCHEMATIC</text>
+</svg>

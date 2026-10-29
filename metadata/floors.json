@@ -1,0 +1,1315 @@
+{
+  "schema": "kci-go2-xt16-maps/floors@1",
+  "generated_at": "2026-10-18T05:46:40.202Z",
+  "floors": [
+    {
+      "id": "1F",
+      "title": "1st floor",
+      "title_ko": "정보관 1층",
+      "building": "information",
+      "run": "usb-2026-10-20",
+      "algorithm": "LIO-SAM",
+      "algorithm_note": "LIO-SAM (loop-closure search radius 5 m), accumulated with deskew, removert dynamic-point removal, robot-path and floor-mirror filters, operator-judged glass double reflections removed; 2 cm voxel. Colours re-painted from the live LIO-SAM display (height to colour).",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Published by operator declaration (map author and operator (Gorilla79), 2026-10-29). Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used.",
+      "canonical": {
+        "artifact": "정보관1층_누적맵_라이브색.npy",
+        "format": "NumPy <f4 (15583749, 8)",
+        "points": 15583749,
+        "bytes": 498680096,
+        "sha256": "5dd314156ca043eb228ac73a847c21aebe8be28ef21f384012c83ceaa18d74a5",
+        "fields": [
+          "x",
+          "y",
+          "z",
+          "r",
+          "g",
+          "b",
+          "t",
+          "zg"
+        ],
+        "field_notes": {
+          "t": "observation time in seconds since the start of the run (bundle README)"
+        }
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z",
+        "r",
+        "g",
+        "b"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome",
+        "rgb"
+      ],
+      "rgb_note": "colour source: baked-height (not camera colour)",
+      "rgb_note_ko": "색 출처: 높이에 따라 미리 칠한 색(카메라 색 아님)",
+      "algorithm_note_ko": "LIO-SAM(루프 클로저 탐색 반경 5 m)으로 만든 누적맵. 점별 왜곡 보정, removert 동적 점 제거, 로봇 경로·바닥 거울상 필터, 사용자가 판정한 유리 이중반사 제거, 2 cm 복셀. 색은 LIO-SAM 실행 화면(높이→색)으로 다시 칠함.",
+      "frame_ko": "LIO-SAM 지도 좌표계: 로봇 출발 위치가 원점, +z 위, 미터. 다른 지도와 정합되지 않음",
+      "frame": "LIO-SAM map frame: origin at the robot start pose, +z up, metres; not aligned to any other map",
+      "floor_z_m": -0.505,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -45.9659,
+          -56.3222,
+          -2.7527
+        ],
+        "max": [
+          34.5907,
+          28.9293,
+          5.4618
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "medium",
+      "lod_order": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "lods": {
+        "low": {
+          "label": "Low",
+          "points": 149734,
+          "voxel_m": 0.2005,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.1F.lio-sam.usb-2026-10-20/information.1F.lio-sam.usb-2026-10-20_low.xyz.bin",
+            "bytes": 1796808,
+            "sha256": "ce6602943391fd8cbabda1e9c79f18e0986296ac86fba9a630a086ae343bb588"
+          },
+          "rgb": {
+            "path": "maps/information.1F.lio-sam.usb-2026-10-20/information.1F.lio-sam.usb-2026-10-20_low.rgb.bin",
+            "bytes": 449202,
+            "sha256": "552a1e679e9b6a00e3a856163910491865a56ae2f440019f7de8f012ea1cab5f"
+          }
+        },
+        "medium": {
+          "label": "Medium",
+          "points": 556411,
+          "voxel_m": 0.1154,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.1F.lio-sam.usb-2026-10-20/information.1F.lio-sam.usb-2026-10-20_medium.xyz.bin",
+            "bytes": 6676932,
+            "sha256": "222fa1b7be068695e8e7a406eb3e2ce642dc6a4e0edf6b759cba4e6d5ef07040"
+          },
+          "rgb": {
+            "path": "maps/information.1F.lio-sam.usb-2026-10-20/information.1F.lio-sam.usb-2026-10-20_medium.rgb.bin",
+            "bytes": 1669233,
+            "sha256": "1aa5de1cb96e60f2735b66f511f3aecbb79657bd039183ca6796ad1d0c26f23e"
+          }
+        },
+        "high": {
+          "label": "High",
+          "points": 2861815,
+          "voxel_m": 0.05525,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.1F.lio-sam.usb-2026-10-20/information.1F.lio-sam.usb-2026-10-20_high.xyz.bin",
+            "bytes": 34341780,
+            "sha256": "d6f0ff65cbdc08bcc7915bb1e979906dab17dfd4fd711c230129e0cc15d8c8f7"
+          },
+          "rgb": {
+            "path": "maps/information.1F.lio-sam.usb-2026-10-20/information.1F.lio-sam.usb-2026-10-20_high.rgb.bin",
+            "bytes": 8585445,
+            "sha256": "1fdb7b42c1f061b9a8d11593b3834afa94410a4843cfcb89eaaf8d14796ad018"
+          }
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "generated_at": "2026-10-20T14:17:01.105Z",
+      "sensor": "Hesai XT16 LiDAR on a Unitree Go2, LIO-SAM with the Go2 IMU (bundle README); the USB bags hold LIO-SAM outputs only",
+      "source_provenance": "map bundle (2026-10-20), file 정보관1층_누적맵_라이브색.npy; produced by the data author, see the per-floor build README",
+      "license_status": "CC-BY-NC-4.0",
+      "publication_permission": "pending",
+      "run_note": "LIO-SAM bundle delivered on USB on 2026-10-20 (building, floor and pipeline from the folder name and the build README)",
+      "integrated_from": "2026-10-20-5dd314156ca0"
+    },
+    {
+      "id": "2F",
+      "title": "2nd floor",
+      "algorithm": "FAST-LIO",
+      "algorithm_note": "Map accumulated with FAST-LIO (iterated-Kalman-filter LiDAR-inertial odometry), dynamic points removed, transformed to floor z = 0 without mirror.",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Processed cleaned FAST-LIO map. The upstream originals (a USB “KCI_MAPS” package) are not on the publishing host; this cleaned map is the earliest available version.",
+      "canonical": {
+        "artifact": "2F_map.npy",
+        "format": "NumPy float32 (N, 3)",
+        "points": 675625,
+        "bytes": 8107628,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ],
+        "field_notes": {}
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome"
+      ],
+      "rgb_note": null,
+      "frame": "floor z=0, +z up, no mirror",
+      "floor_z_m": 0,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -21.1802,
+          -25.4878,
+          -0.35
+        ],
+        "max": [
+          20.3577,
+          20.9902,
+          3.2
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "250k",
+      "lod_order": [
+        "100k",
+        "250k",
+        "full"
+      ],
+      "lods": {
+        "100k": {
+          "label": "100k",
+          "points": 66636,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/2F/2F_100k.bin",
+            "bytes": 799632,
+            "sha256": "38e10a3bdbff45ae826240d2ae94abe20a8687806c32865bd530e089317f5c28"
+          },
+          "rgb": null
+        },
+        "250k": {
+          "label": "250k",
+          "points": 198467,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/2F/2F_250k.bin",
+            "bytes": 2381604,
+            "sha256": "5be7c65dca5e4ea7602db34138359cd9b63a6320566af2d181280c0f91db4756"
+          },
+          "rgb": null
+        },
+        "full": {
+          "label": "Full",
+          "points": 675625,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/2F/2F_full.bin",
+            "bytes": 8107500,
+            "sha256": "5192796a4e1c14a185550e2a04271550b6eb1df62a20a977cf24bbde0d6c73e6"
+          },
+          "rgb": null
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "dynamic_removed": true,
+      "generated_at": null
+    },
+    {
+      "id": "2F",
+      "title": "2nd floor",
+      "title_ko": "정보관 2층",
+      "building": "information",
+      "run": "usb-2026-10-20",
+      "algorithm": "LIO-SAM",
+      "algorithm_note": "LIO-SAM (loop-closure search radius 5 m); the robot walked the central hall; space seen through glass kept by operator decision; dynamic, robot-path, floor-mirror and wall-penetration filters; 2 cm voxel. Live-display colours (height to colour).",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Published by operator declaration (map author and operator (Gorilla79), 2026-10-29). Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used.",
+      "canonical": {
+        "artifact": "정보관2층_누적맵_라이브색.npy",
+        "format": "NumPy <f4 (7900587, 8)",
+        "points": 7900587,
+        "bytes": 252818912,
+        "sha256": "92a638be6599700966a9e37e9cdebb0836a9489192a92cfa8477a03d9ccb36c8",
+        "fields": [
+          "x",
+          "y",
+          "z",
+          "r",
+          "g",
+          "b",
+          "t",
+          "zg"
+        ],
+        "field_notes": {
+          "t": "observation time in seconds since the start of the run (bundle README)"
+        }
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z",
+        "r",
+        "g",
+        "b"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome",
+        "rgb"
+      ],
+      "rgb_note": "colour source: baked-height (not camera colour)",
+      "rgb_note_ko": "색 출처: 높이에 따라 미리 칠한 색(카메라 색 아님)",
+      "algorithm_note_ko": "LIO-SAM(루프 클로저 탐색 반경 5 m). 로봇은 가운데 홀을 걸었고, 유리 너머 공간은 사용자 판단으로 남김. 동적·로봇 경로·바닥 거울상·벽 뚫림 필터, 2 cm 복셀. 실행 화면 색(높이→색).",
+      "frame_ko": "LIO-SAM 지도 좌표계: 로봇 출발 위치가 원점, +z 위, 미터. 다른 지도와 정합되지 않음",
+      "frame": "LIO-SAM map frame: origin at the robot start pose, +z up, metres; not aligned to any other map",
+      "floor_z_m": -0.525,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -42.7319,
+          -39.2385,
+          -2.2481
+        ],
+        "max": [
+          47.9703,
+          28.1871,
+          7.0554
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "medium",
+      "lod_order": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "lods": {
+        "low": {
+          "label": "Low",
+          "points": 156600,
+          "voxel_m": 0.1772,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.2F.lio-sam.usb-2026-10-20/information.2F.lio-sam.usb-2026-10-20_low.xyz.bin",
+            "bytes": 1879200,
+            "sha256": "b28f7625248d4a7db34283092c1e3aa9803ef68c99ea5bce9b8696d73bdc97f3"
+          },
+          "rgb": {
+            "path": "maps/information.2F.lio-sam.usb-2026-10-20/information.2F.lio-sam.usb-2026-10-20_low.rgb.bin",
+            "bytes": 469800,
+            "sha256": "a94bb7b6bacce680d7d513f9fb0b29432b079db0277ab84813c0db94080d13fb"
+          }
+        },
+        "medium": {
+          "label": "Medium",
+          "points": 589156,
+          "voxel_m": 0.09301,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.2F.lio-sam.usb-2026-10-20/information.2F.lio-sam.usb-2026-10-20_medium.xyz.bin",
+            "bytes": 7069872,
+            "sha256": "6b3963af08047ee9d2c3fa7020b7d062ece60b8d3057c03b236f9013e143a0c6"
+          },
+          "rgb": {
+            "path": "maps/information.2F.lio-sam.usb-2026-10-20/information.2F.lio-sam.usb-2026-10-20_medium.rgb.bin",
+            "bytes": 1767468,
+            "sha256": "3a837284a1f27c821acafbcdd004dc073f6d0f080207336cc616acd06120ba2f"
+          }
+        },
+        "high": {
+          "label": "High",
+          "points": 2730037,
+          "voxel_m": 0.04062,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.2F.lio-sam.usb-2026-10-20/information.2F.lio-sam.usb-2026-10-20_high.xyz.bin",
+            "bytes": 32760444,
+            "sha256": "349c93869a2fc0213438e3e7d5a83d0be8b2cf4a19a39f361802f88c786f8ae7"
+          },
+          "rgb": {
+            "path": "maps/information.2F.lio-sam.usb-2026-10-20/information.2F.lio-sam.usb-2026-10-20_high.rgb.bin",
+            "bytes": 8190111,
+            "sha256": "c77a8dcb72e317e48be04d3bfbca6e394ce6dddd363568cdb85931584e96aac2"
+          }
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "generated_at": "2026-10-20T14:17:50.059Z",
+      "sensor": "Hesai XT16 LiDAR on a Unitree Go2, LIO-SAM with the Go2 IMU (bundle README); the USB bags hold LIO-SAM outputs only",
+      "source_provenance": "map bundle (2026-10-20), file 정보관2층_누적맵_라이브색.npy; produced by the data author, see the per-floor build README",
+      "license_status": "CC-BY-NC-4.0",
+      "publication_permission": "pending",
+      "run_note": "LIO-SAM bundle delivered on USB on 2026-10-20 (building, floor and pipeline from the folder name and the build README)",
+      "integrated_from": "2026-10-20-92a638be6599"
+    },
+    {
+      "id": "3F",
+      "title": "3rd floor",
+      "algorithm": "FAST-LIO",
+      "algorithm_note": "Map accumulated with FAST-LIO (iterated-Kalman-filter LiDAR-inertial odometry), dynamic points removed, transformed to floor z = 0 without mirror.",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Processed cleaned FAST-LIO map. The upstream originals (a USB “KCI_MAPS” package) are not on the publishing host; this cleaned map is the earliest available version.",
+      "canonical": {
+        "artifact": "3F_map.npy",
+        "format": "NumPy float32 (N, 3)",
+        "points": 818961,
+        "bytes": 9827660,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ],
+        "field_notes": {}
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome"
+      ],
+      "rgb_note": null,
+      "frame": "floor z=0, +z up, no mirror",
+      "floor_z_m": 0,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -37.5413,
+          -34.9356,
+          -0.35
+        ],
+        "max": [
+          36.8116,
+          44.2945,
+          2.6806
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "250k",
+      "lod_order": [
+        "100k",
+        "250k",
+        "full"
+      ],
+      "lods": {
+        "100k": {
+          "label": "100k",
+          "points": 77963,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/3F/3F_100k.bin",
+            "bytes": 935556,
+            "sha256": "2fd83e03e3966a2955904d3c7d86faa02daeecdf0b638eeb2ff1a84a0e3f1b1c"
+          },
+          "rgb": null
+        },
+        "250k": {
+          "label": "250k",
+          "points": 179605,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/3F/3F_250k.bin",
+            "bytes": 2155260,
+            "sha256": "da4d99ad0f348e138928b68a835918dece095a0a304e07a4a0b8aa0f3bb7ff37"
+          },
+          "rgb": null
+        },
+        "full": {
+          "label": "Full",
+          "points": 818961,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/3F/3F_full.bin",
+            "bytes": 9827532,
+            "sha256": "c2860956303d37f11ba4ec304e525282807c9e1cba87af7d3ed4ce4b6deb3ed4"
+          },
+          "rgb": null
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "dynamic_removed": true,
+      "generated_at": null
+    },
+    {
+      "id": "3F",
+      "title": "3rd floor",
+      "title_ko": "정보관 3층",
+      "building": "information",
+      "run": "usb-2026-10-20",
+      "algorithm": "LIO-SAM",
+      "algorithm_note": "LIO-SAM accumulated map from an earlier bundle (zstd); per-scan height colours. The bundle README notes faint person traces along the robot path in the 3F/4F live maps.",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Published by operator declaration (map author and operator (Gorilla79), 2026-10-29). Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used.",
+      "canonical": {
+        "artifact": "정보관3층_누적맵.npy",
+        "format": "NumPy <f4 (30914560, 8)",
+        "points": 30914560,
+        "bytes": 989266048,
+        "sha256": "d79101da34df2d275c79ee1d039f79666e39dbd0c39506d4716454a0f3d11b2e",
+        "fields": [
+          "x",
+          "y",
+          "z",
+          "r",
+          "g",
+          "b",
+          "t",
+          "zg"
+        ],
+        "field_notes": {
+          "t": "observation time in seconds since the start of the run (bundle README)"
+        }
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z",
+        "r",
+        "g",
+        "b"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome",
+        "rgb"
+      ],
+      "rgb_note": "colour source: baked-height (not camera colour)",
+      "rgb_note_ko": "색 출처: 높이에 따라 미리 칠한 색(카메라 색 아님)",
+      "algorithm_note_ko": "이전 묶음(zstd 압축)의 LIO-SAM 누적맵. 스캔별 높이 색. 묶음 README에 따르면 3·4층 라이브맵에는 로봇 경로를 따라 옅은 사람 흔적이 남아 있음.",
+      "frame_ko": "LIO-SAM 지도 좌표계: 로봇 출발 위치가 원점, +z 위, 미터. 다른 지도와 정합되지 않음",
+      "frame": "LIO-SAM map frame: origin at the robot start pose, +z up, metres; not aligned to any other map",
+      "floor_z_m": -0.525,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -54.0073,
+          -16.6297,
+          -2.8853
+        ],
+        "max": [
+          41.855,
+          16.4819,
+          4.1588
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "medium",
+      "lod_order": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "lods": {
+        "low": {
+          "label": "Low",
+          "points": 139464,
+          "voxel_m": 0.2249,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.3F.lio-sam.usb-2026-10-20/information.3F.lio-sam.usb-2026-10-20_low.xyz.bin",
+            "bytes": 1673568,
+            "sha256": "c3f6bf723121cbfa2a3f2db16befa7f9c2c01fd745f7e5cb0e692ffa5d42555b"
+          },
+          "rgb": {
+            "path": "maps/information.3F.lio-sam.usb-2026-10-20/information.3F.lio-sam.usb-2026-10-20_low.rgb.bin",
+            "bytes": 418392,
+            "sha256": "5d67cdc45fce434eaa3e3fab2f0d64795413f73c3bb96646d1eac7f1e5d299db"
+          }
+        },
+        "medium": {
+          "label": "Medium",
+          "points": 576820,
+          "voxel_m": 0.118,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.3F.lio-sam.usb-2026-10-20/information.3F.lio-sam.usb-2026-10-20_medium.xyz.bin",
+            "bytes": 6921840,
+            "sha256": "b233265d6a4eb9977f71b7d9c8035ef3017f07085c5dd8d65672dd26052f842f"
+          },
+          "rgb": {
+            "path": "maps/information.3F.lio-sam.usb-2026-10-20/information.3F.lio-sam.usb-2026-10-20_medium.rgb.bin",
+            "bytes": 1730460,
+            "sha256": "9be175fc1d1022e9ed6e90b2fc6eeffb01fd3b3f41b611076fca60421523875f"
+          }
+        },
+        "high": {
+          "label": "High",
+          "points": 2796397,
+          "voxel_m": 0.05155,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.3F.lio-sam.usb-2026-10-20/information.3F.lio-sam.usb-2026-10-20_high.xyz.bin",
+            "bytes": 33556764,
+            "sha256": "66be2eb53978923a997c14509c2bd83d1b27d194dd7344d650a2021ee0a15959"
+          },
+          "rgb": {
+            "path": "maps/information.3F.lio-sam.usb-2026-10-20/information.3F.lio-sam.usb-2026-10-20_high.rgb.bin",
+            "bytes": 8389191,
+            "sha256": "7974d258898ef20ccb9fcac174c687b2b7abb432d4adc067bfc82fc0928edb20"
+          }
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "generated_at": "2026-10-20T14:22:25.176Z",
+      "sensor": "Hesai XT16 LiDAR on a Unitree Go2, LIO-SAM with the Go2 IMU (bundle README); the USB bags hold LIO-SAM outputs only",
+      "source_provenance": "map bundle (2026-10-20), file 정보관3층_누적맵.npy; produced by the data author, see the per-floor build README",
+      "license_status": "CC-BY-NC-4.0",
+      "publication_permission": "pending",
+      "run_note": "LIO-SAM bundle delivered on USB on 2026-10-20 (building, floor and pipeline from the folder name and the build README)",
+      "source_archive": {
+        "name": "정보관3층_누적맵.npy.zst",
+        "sha256": "a0dc3f24b20e201ba8d9171f7597eca5b05e665a25f7eb9a49888707e6e43142"
+      },
+      "integrated_from": "2026-10-20-d79101da34df"
+    },
+    {
+      "id": "4F",
+      "title": "4th floor",
+      "algorithm": "LIO-SAM",
+      "algorithm_note": "Canonical public map built with LIO-SAM (factor-graph LiDAR-inertial odometry and mapping), then post-filtered. A FAST-LIO trajectory of the same run exists only as comparison data.",
+      "provenance": "canonical-original",
+      "status": "processed",
+      "status_note": "Canonical original: LIO-SAM accumulation with multipath-mirror, following-person and fog filtering applied (F4_HQ26_BEST).",
+      "canonical": {
+        "artifact": "F4_HQ26_BEST.npy",
+        "format": "NumPy float32 (N, 8)",
+        "points": 26000000,
+        "bytes": 832000128,
+        "fields": [
+          "x",
+          "y",
+          "z",
+          "r",
+          "g",
+          "b",
+          "t",
+          "zg"
+        ],
+        "field_notes": {
+          "r": "colour precomputed from the RViz AxisColor rainbow map (not camera colour)",
+          "g": "see r",
+          "b": "see r",
+          "t": "observation time (s)",
+          "zg": "height above ground = world z − robot height at observation time"
+        }
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z",
+        "r",
+        "g",
+        "b"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome",
+        "rgb"
+      ],
+      "rgb_note": "The RGB channel is a height-based rainbow colouring baked in by the processing pipeline, not photographic colour.",
+      "frame": "LIO-SAM world (lidar start frame), +z up, floor at z=-0.378 m",
+      "floor_z_m": -0.378,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -14.9999,
+          -57.7484,
+          -2.4996
+        ],
+        "max": [
+          12.9716,
+          39.4404,
+          4.6979
+        ]
+      },
+      "floor_area_m2": 2677.2,
+      "default_lod": "medium",
+      "lod_order": [
+        "preview",
+        "medium",
+        "detailed"
+      ],
+      "lods": {
+        "preview": {
+          "label": "Preview",
+          "points": 130736,
+          "voxel_m": 0.1956,
+          "xyz": {
+            "path": "maps/4F/4F_preview.xyz.bin",
+            "bytes": 1568832,
+            "sha256": "e0e1b53bf515a400707e03b5cc46a3ba93ad86eb0d7d19a1743ca25d74c39f73"
+          },
+          "rgb": {
+            "path": "maps/4F/4F_preview.rgb.bin",
+            "bytes": 392208,
+            "sha256": "4dd7ddf5148af41192a91d8047c4de945b3b8db0efd2afb5205a82a9f86b7f52"
+          }
+        },
+        "medium": {
+          "label": "Medium",
+          "points": 889798,
+          "voxel_m": 0.0854,
+          "xyz": {
+            "path": "maps/4F/4F_medium.xyz.bin",
+            "bytes": 10677576,
+            "sha256": "6975b5510881ba672c4efb3cf37c09f66ab842f7324e814277be41f62349f134"
+          },
+          "rgb": {
+            "path": "maps/4F/4F_medium.rgb.bin",
+            "bytes": 2669394,
+            "sha256": "ffa9a112cc2e05ab58f3b8e02d6686e03b414a8884bf3940b0ca968a18e6801d"
+          }
+        },
+        "detailed": {
+          "label": "Detailed",
+          "points": 2877039,
+          "voxel_m": 0.0471,
+          "xyz": {
+            "path": "maps/4F/4F_detailed.xyz.bin",
+            "bytes": 34524468,
+            "sha256": "8e15e0da24948d15f5ec54cd788a40064f286dfd6eee6a48a3a743d15178148e"
+          },
+          "rgb": {
+            "path": "maps/4F/4F_detailed.rgb.bin",
+            "bytes": 8631117,
+            "sha256": "1a3121279136f4aa8bd4bc89284e1af94f16eaa4eff14b140fe0c1c905aa431c"
+          }
+        }
+      },
+      "trajectory": {
+        "available": true,
+        "source_artifact": "F4_LIOSAM_r05_poses.npz",
+        "algorithm": "LIO-SAM",
+        "points": 4013,
+        "length_m": 343.3,
+        "length_m_recomputed": 343.32,
+        "duration_s": 401.2,
+        "closure_m": 0.317,
+        "file": {
+          "path": "maps/4F/4F_trajectory.bin",
+          "bytes": 48156,
+          "sha256": "0833943f254f59b28f3543be2df6c6eb32ebf42eaa25a137630a82e4a689c005"
+        }
+      },
+      "comparison_data": [
+        {
+          "artifact": "F4_FASTLIO_poses.npz",
+          "description": "FAST-LIO trajectory of the same 4F run, kept for comparison (4,011 poses). Start–end closure 27.77 m vs 0.317 m for LIO-SAM. Expressed in the FAST-LIO world (initial IMU frame), which is mirrored relative to the LIO-SAM world; align with T_W_L = T_W_I · T_I_L before comparing."
+        }
+      ],
+      "generated_at": "2026-09-08T22:17:35+0900"
+    },
+    {
+      "id": "5F",
+      "title": "5th floor",
+      "title_ko": "정보관 5층",
+      "building": "information",
+      "run": "usb-2026-10-20",
+      "algorithm": "LIO-SAM",
+      "algorithm_note": "LIO-SAM (loop-closure search radius 5 m); map tilt of about 1.2 deg levelled with the floor; dynamic, robot-path, floor-mirror and wall-penetration filters; one operator-marked stair reflection removed; 2 cm voxel. Live-display colours (height to colour).",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Published by operator declaration (map author and operator (Gorilla79), 2026-10-29). Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used.",
+      "canonical": {
+        "artifact": "정보관5층_누적맵_라이브색.npy",
+        "format": "NumPy <f4 (15875970, 8)",
+        "points": 15875970,
+        "bytes": 508031168,
+        "sha256": "6306cf80e3e89805e2317e5c636a2e18a32bb72c91f02034f8fe7d75176bb097",
+        "fields": [
+          "x",
+          "y",
+          "z",
+          "r",
+          "g",
+          "b",
+          "t",
+          "zg"
+        ],
+        "field_notes": {
+          "t": "observation time in seconds since the start of the run (bundle README)"
+        }
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z",
+        "r",
+        "g",
+        "b"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome",
+        "rgb"
+      ],
+      "rgb_note": "colour source: baked-height (not camera colour)",
+      "rgb_note_ko": "색 출처: 높이에 따라 미리 칠한 색(카메라 색 아님)",
+      "algorithm_note_ko": "LIO-SAM(루프 클로저 탐색 반경 5 m). 지도 전체의 약 1.2° 기울기를 바닥으로 맞춤. 동적·로봇 경로·바닥 거울상·벽 뚫림 필터, 사용자가 지목한 계단 반사 1곳 제거, 2 cm 복셀. 실행 화면 색(높이→색).",
+      "frame_ko": "LIO-SAM 지도 좌표계: 로봇 출발 위치가 원점, +z 위, 미터. 다른 지도와 정합되지 않음",
+      "frame": "LIO-SAM map frame: origin at the robot start pose, +z up, metres; not aligned to any other map",
+      "floor_z_m": -0.305,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -59.7129,
+          -14.0045,
+          -2.8316
+        ],
+        "max": [
+          57.3154,
+          28.929,
+          7.352
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "medium",
+      "lod_order": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "lods": {
+        "low": {
+          "label": "Low",
+          "points": 140945,
+          "voxel_m": 0.2075,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.5F.lio-sam.usb-2026-10-20/information.5F.lio-sam.usb-2026-10-20_low.xyz.bin",
+            "bytes": 1691340,
+            "sha256": "d078a7356295f03cc54891009ea540423317bb3b463c053a6e2783e78346b3a5"
+          },
+          "rgb": {
+            "path": "maps/information.5F.lio-sam.usb-2026-10-20/information.5F.lio-sam.usb-2026-10-20_low.rgb.bin",
+            "bytes": 422835,
+            "sha256": "70b80417131acb38d5fe8e2d28756097c9029c0fc7527850a3f894ee90070f62"
+          }
+        },
+        "medium": {
+          "label": "Medium",
+          "points": 629622,
+          "voxel_m": 0.1089,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.5F.lio-sam.usb-2026-10-20/information.5F.lio-sam.usb-2026-10-20_medium.xyz.bin",
+            "bytes": 7555464,
+            "sha256": "f4d7e0b20e3adceac38d746aa1bef06e9dd0b6de4871eca1a58805050273b524"
+          },
+          "rgb": {
+            "path": "maps/information.5F.lio-sam.usb-2026-10-20/information.5F.lio-sam.usb-2026-10-20_medium.rgb.bin",
+            "bytes": 1888866,
+            "sha256": "4203db30aea14178634fcd1707b01062530db541e7fdd4159948fad011beb566"
+          }
+        },
+        "high": {
+          "label": "High",
+          "points": 2665150,
+          "voxel_m": 0.05718,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/information.5F.lio-sam.usb-2026-10-20/information.5F.lio-sam.usb-2026-10-20_high.xyz.bin",
+            "bytes": 31981800,
+            "sha256": "268ed0569803d85444f04453c296e58c3bdb526b39a1f0708fb2f44c7b1fe4be"
+          },
+          "rgb": {
+            "path": "maps/information.5F.lio-sam.usb-2026-10-20/information.5F.lio-sam.usb-2026-10-20_high.rgb.bin",
+            "bytes": 7995450,
+            "sha256": "f3728c0546e7707c2ebb75f7fcb8cffdd8df9e0e9c11413ea816189581eb7c9f"
+          }
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "generated_at": "2026-10-20T14:24:07.236Z",
+      "sensor": "Hesai XT16 LiDAR on a Unitree Go2, LIO-SAM with the Go2 IMU (bundle README); the USB bags hold LIO-SAM outputs only",
+      "source_provenance": "map bundle (2026-10-20), file 정보관5층_누적맵_라이브색.npy; produced by the data author, see the per-floor build README",
+      "license_status": "CC-BY-NC-4.0",
+      "publication_permission": "pending",
+      "run_note": "LIO-SAM bundle delivered on USB on 2026-10-20 (building, floor and pipeline from the folder name and the build README)",
+      "integrated_from": "2026-10-20-6306cf80e3e8"
+    },
+    {
+      "id": "6F",
+      "title": "6th floor",
+      "algorithm": "FAST-LIO",
+      "algorithm_note": "Map accumulated with FAST-LIO (iterated-Kalman-filter LiDAR-inertial odometry), dynamic points removed, transformed to floor z = 0 without mirror.",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Processed cleaned FAST-LIO map. The upstream originals (a USB “KCI_MAPS” package) are not on the publishing host; this cleaned map is the earliest available version.",
+      "canonical": {
+        "artifact": "6F_map.npy",
+        "format": "NumPy float32 (N, 3)",
+        "points": 546898,
+        "bytes": 6562904,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ],
+        "field_notes": {}
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome"
+      ],
+      "rgb_note": null,
+      "frame": "floor z=0, +z up, no mirror",
+      "floor_z_m": 0,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -41.8107,
+          -32.5911,
+          -0.35
+        ],
+        "max": [
+          34.6656,
+          39.4352,
+          2.6846
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "250k",
+      "lod_order": [
+        "100k",
+        "250k",
+        "full"
+      ],
+      "lods": {
+        "100k": {
+          "label": "100k",
+          "points": 73794,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/6F/6F_100k.bin",
+            "bytes": 885528,
+            "sha256": "64e969df94a25732c226616d48ea8f4500ac43c1af66389dbaf7650d2564b677"
+          },
+          "rgb": null
+        },
+        "250k": {
+          "label": "250k",
+          "points": 166904,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/6F/6F_250k.bin",
+            "bytes": 2002848,
+            "sha256": "d097d4118ea4f8b5eb04c70223292936e3afe61dcf86c07492aeea90f6cc5f44"
+          },
+          "rgb": null
+        },
+        "full": {
+          "label": "Full",
+          "points": 546898,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/6F/6F_full.bin",
+            "bytes": 6562776,
+            "sha256": "f3e45e58db33a592fd6398bdb6270037419db0765b35ce624c79d621b616f74b"
+          },
+          "rgb": null
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "dynamic_removed": true,
+      "generated_at": null
+    },
+    {
+      "id": "8F",
+      "title": "8th floor",
+      "algorithm": "FAST-LIO",
+      "algorithm_note": "Map accumulated with FAST-LIO (iterated-Kalman-filter LiDAR-inertial odometry), dynamic points removed, transformed to floor z = 0 without mirror.",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Processed cleaned FAST-LIO map. The upstream originals (a USB “KCI_MAPS” package) are not on the publishing host; this cleaned map is the earliest available version.",
+      "canonical": {
+        "artifact": "8F_map.npy",
+        "format": "NumPy float32 (N, 3)",
+        "points": 544672,
+        "bytes": 6536192,
+        "fields": [
+          "x",
+          "y",
+          "z"
+        ],
+        "field_notes": {}
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome"
+      ],
+      "rgb_note": null,
+      "frame": "floor z=0, +z up, no mirror",
+      "floor_z_m": 0,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -42.1315,
+          -31.9945,
+          -0.35
+        ],
+        "max": [
+          35.5665,
+          37.845,
+          2.6833
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "250k",
+      "lod_order": [
+        "100k",
+        "250k",
+        "full"
+      ],
+      "lods": {
+        "100k": {
+          "label": "100k",
+          "points": 74105,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/8F/8F_100k.bin",
+            "bytes": 889260,
+            "sha256": "cd84744f95234c6614834032fddafc86366090de02d3bf55c1c8a3853e9d3de6"
+          },
+          "rgb": null
+        },
+        "250k": {
+          "label": "250k",
+          "points": 166572,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/8F/8F_250k.bin",
+            "bytes": 1998864,
+            "sha256": "0d443f21882932a81f6ea652c6324ad24f56239fa673b99938fefb38b2424411"
+          },
+          "rgb": null
+        },
+        "full": {
+          "label": "Full",
+          "points": 544672,
+          "voxel_m": null,
+          "xyz": {
+            "path": "maps/8F/8F_full.bin",
+            "bytes": 6536064,
+            "sha256": "4ce0af8d6e3fb42b93de956ac267e8f5f05e63a64482175571b15fbdb7f717fe"
+          },
+          "rgb": null
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "dynamic_removed": true,
+      "generated_at": null
+    },
+    {
+      "id": "1F",
+      "title": "1st floor",
+      "title_ko": "공학관 1층",
+      "building": "engineering",
+      "run": "usb-2026-10-20",
+      "algorithm": "LIO-SAM",
+      "algorithm_note": "LIO-SAM; a dead-end corridor stall (575-612 s) bridged with leg odometry, then scan re-registration and floor levelling; removert, robot-path and floor-mirror filters, operator-judged glass reflections removed (1,141,252 points), four outdoor exception zones kept; 2 cm voxel. Live-display colours (height to colour).",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Published by operator declaration (map author and operator (Gorilla79), 2026-10-29). Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used.",
+      "canonical": {
+        "artifact": "공학관1층_누적맵_라이브색.npy",
+        "format": "NumPy <f4 (24831694, 8)",
+        "points": 24831694,
+        "bytes": 794614336,
+        "sha256": "b55bb11a746314077db5301168dfdeb8ff977673e5b6199271fe735d1c73bdff",
+        "fields": [
+          "x",
+          "y",
+          "z",
+          "r",
+          "g",
+          "b",
+          "t",
+          "zg"
+        ],
+        "field_notes": {
+          "t": "observation time in seconds since the start of the run (bundle README)"
+        }
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z",
+        "r",
+        "g",
+        "b"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome",
+        "rgb"
+      ],
+      "rgb_note": "colour source: baked-height (not camera colour)",
+      "rgb_note_ko": "색 출처: 높이에 따라 미리 칠한 색(카메라 색 아님)",
+      "algorithm_note_ko": "LIO-SAM. 막다른 복도에서 멈춘 구간(575–612초)을 다리 오도메트리로 메운 뒤 스캔 재정합·바닥 높이 맞춤. removert·로봇 경로·바닥 거울상 필터, 사용자가 판정한 유리 반사 제거(1,141,252점), 바깥 예외구역 4곳 유지, 2 cm 복셀. 실행 화면 색(높이→색).",
+      "frame_ko": "LIO-SAM 지도 좌표계: 로봇 출발 위치가 원점, +z 위, 미터. 다른 지도와 정합되지 않음",
+      "frame": "LIO-SAM map frame: origin at the robot start pose, +z up, metres; not aligned to any other map",
+      "floor_z_m": -0.465,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -90.555,
+          -47.5717,
+          -4.7317
+        ],
+        "max": [
+          95.3341,
+          33.0466,
+          11.6942
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "medium",
+      "lod_order": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "lods": {
+        "low": {
+          "label": "Low",
+          "points": 158443,
+          "voxel_m": 0.2987,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/engineering.1F.lio-sam.usb-2026-10-20/engineering.1F.lio-sam.usb-2026-10-20_low.xyz.bin",
+            "bytes": 1901316,
+            "sha256": "b6596d4d8b079c52428c9db1651c89b03786f587faa161aca0f4e4c2f7fb3865"
+          },
+          "rgb": {
+            "path": "maps/engineering.1F.lio-sam.usb-2026-10-20/engineering.1F.lio-sam.usb-2026-10-20_low.rgb.bin",
+            "bytes": 475329,
+            "sha256": "7ea06a2c21bb2cdc49cd7bfb7c0f92a2d65612f50f4636cc20e9c5d8d39d2d4a"
+          }
+        },
+        "medium": {
+          "label": "Medium",
+          "points": 514710,
+          "voxel_m": 0.1719,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/engineering.1F.lio-sam.usb-2026-10-20/engineering.1F.lio-sam.usb-2026-10-20_medium.xyz.bin",
+            "bytes": 6176520,
+            "sha256": "bc7b9a80f90bcab6deb92d1c7c1f7b3a401a4daaa97a98052b13869ea5573710"
+          },
+          "rgb": {
+            "path": "maps/engineering.1F.lio-sam.usb-2026-10-20/engineering.1F.lio-sam.usb-2026-10-20_medium.rgb.bin",
+            "bytes": 1544130,
+            "sha256": "9da49cf199fb792a423990ec63bf9c717b568f2928a3e8cb78756c70172753c5"
+          }
+        },
+        "high": {
+          "label": "High",
+          "points": 2837729,
+          "voxel_m": 0.07509,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/engineering.1F.lio-sam.usb-2026-10-20/engineering.1F.lio-sam.usb-2026-10-20_high.xyz.bin",
+            "bytes": 34052748,
+            "sha256": "d42c65c04310ead0467f30b593afda2ba3b639dd65c05179a95f135690dcfc76"
+          },
+          "rgb": {
+            "path": "maps/engineering.1F.lio-sam.usb-2026-10-20/engineering.1F.lio-sam.usb-2026-10-20_high.rgb.bin",
+            "bytes": 8513187,
+            "sha256": "b4ccc11323356d13f13c07d37504df4454be2f0adca7ad528bc9f12f0c7121c4"
+          }
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "generated_at": "2026-10-20T14:26:28.230Z",
+      "sensor": "Hesai XT16 LiDAR on a Unitree Go2, LIO-SAM with the Go2 IMU (bundle README); the USB bags hold LIO-SAM outputs only",
+      "source_provenance": "map bundle (2026-10-20), file 공학관1층_누적맵_라이브색.npy; produced by the data author, see the per-floor build README",
+      "license_status": "CC-BY-NC-4.0",
+      "publication_permission": "pending",
+      "run_note": "LIO-SAM bundle delivered on USB on 2026-10-20 (building, floor and pipeline from the folder name and the build README)",
+      "integrated_from": "2026-10-20-b55bb11a7463"
+    },
+    {
+      "id": "1F",
+      "title": "1st floor",
+      "title_ko": "산학협력관(소융대) 1층",
+      "building": "industry-cooperation",
+      "run": "usb-2026-10-20",
+      "algorithm": "LIO-SAM",
+      "algorithm_note": "LIO-SAM run D1 (loop closure 0.28 m reported); dynamic removal, path-sweep person filter, floor-mirror filter, operator-confirmed glass reflections removed; poses re-registered offline and floor-levelled; 2 cm voxel. Live-display colours (height to colour).",
+      "provenance": "processed-cleaned",
+      "status": "processed",
+      "status_note": "Published by operator declaration (map author and operator (Gorilla79), 2026-10-29). Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used.",
+      "canonical": {
+        "artifact": "소융대1층_누적맵_라이브색.npy",
+        "format": "NumPy <f4 (24372763, 8)",
+        "points": 24372763,
+        "bytes": 779928544,
+        "sha256": "107f0a6d61ab118cacf3c76426a723a32258b0a1900b56e11a66d00384d5fcfb",
+        "fields": [
+          "x",
+          "y",
+          "z",
+          "r",
+          "g",
+          "b",
+          "t",
+          "zg"
+        ],
+        "field_notes": {
+          "t": "observation time in seconds since the start of the run (bundle README)"
+        }
+      },
+      "web_fields": [
+        "x",
+        "y",
+        "z",
+        "r",
+        "g",
+        "b"
+      ],
+      "color_modes": [
+        "height",
+        "monochrome",
+        "rgb"
+      ],
+      "rgb_note": "colour source: baked-height (not camera colour)",
+      "rgb_note_ko": "색 출처: 높이에 따라 미리 칠한 색(카메라 색 아님)",
+      "algorithm_note_ko": "LIO-SAM 실행 D1(보고된 루프 폐합 0.28 m). 동적 제거, 경로 쓸기 사람 필터, 바닥 거울상 필터, 사용자가 확인한 유리 반사 제거, 오프라인 포즈 재정합과 바닥 높이 보정, 2 cm 복셀. 실행 화면 색(높이→색).",
+      "frame_ko": "LIO-SAM 지도 좌표계: 로봇 출발 위치가 원점, +z 위, 미터. 다른 지도와 정합되지 않음",
+      "frame": "LIO-SAM map frame: origin at the robot start pose, +z up, metres; not aligned to any other map",
+      "floor_z_m": -0.535,
+      "unit": "meter",
+      "bounds": {
+        "min": [
+          -11.9921,
+          -51.4121,
+          -2.768
+        ],
+        "max": [
+          42.7618,
+          18.2297,
+          5.4465
+        ]
+      },
+      "floor_area_m2": null,
+      "default_lod": "medium",
+      "lod_order": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "lods": {
+        "low": {
+          "label": "Low",
+          "points": 160426,
+          "voxel_m": 0.1646,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/industry-cooperation.1F.lio-sam.usb-2026-10-20/industry-cooperation.1F.lio-sam.usb-2026-10-20_low.xyz.bin",
+            "bytes": 1925112,
+            "sha256": "47d34aa43cb5f718e15c2ed70c790b3dc97a88fee2ab478953bafa7af2f20bb0"
+          },
+          "rgb": {
+            "path": "maps/industry-cooperation.1F.lio-sam.usb-2026-10-20/industry-cooperation.1F.lio-sam.usb-2026-10-20_low.rgb.bin",
+            "bytes": 481278,
+            "sha256": "d869cadcabc817c1633911a7da48e9ac7f5916b1f838ec3a6bd5d9c58e02fc89"
+          }
+        },
+        "medium": {
+          "label": "Medium",
+          "points": 512980,
+          "voxel_m": 0.09475,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/industry-cooperation.1F.lio-sam.usb-2026-10-20/industry-cooperation.1F.lio-sam.usb-2026-10-20_medium.xyz.bin",
+            "bytes": 6155760,
+            "sha256": "8e527b463fb6c4f200906330dcca5ce67c02b63a2fc5c5e3b49cdfbcc13bbc48"
+          },
+          "rgb": {
+            "path": "maps/industry-cooperation.1F.lio-sam.usb-2026-10-20/industry-cooperation.1F.lio-sam.usb-2026-10-20_medium.rgb.bin",
+            "bytes": 1538940,
+            "sha256": "d3d806daae94f9d3e74e72aa1621432a0482d33bf1037c82109442ccc77313d9"
+          }
+        },
+        "high": {
+          "label": "High",
+          "points": 2679793,
+          "voxel_m": 0.04138,
+          "method": "first point per occupied voxel, in file order",
+          "xyz": {
+            "path": "maps/industry-cooperation.1F.lio-sam.usb-2026-10-20/industry-cooperation.1F.lio-sam.usb-2026-10-20_high.xyz.bin",
+            "bytes": 32157516,
+            "sha256": "e86c9a3ac544f08e751d4138381a3a0126970eca817da001b890967ecfe54156"
+          },
+          "rgb": {
+            "path": "maps/industry-cooperation.1F.lio-sam.usb-2026-10-20/industry-cooperation.1F.lio-sam.usb-2026-10-20_high.rgb.bin",
+            "bytes": 8039379,
+            "sha256": "92fc201b2672279fbf78b3cb454c27efaeacdb820b0f984c47db27442140d9e3"
+          }
+        }
+      },
+      "trajectory": {
+        "available": false
+      },
+      "comparison_data": [],
+      "generated_at": "2026-10-20T14:29:07.931Z",
+      "sensor": "Hesai XT16 LiDAR on a Unitree Go2, LIO-SAM with the Go2 IMU (bundle README); the USB bags hold LIO-SAM outputs only",
+      "source_provenance": "map bundle (2026-10-20), file 소융대1층_누적맵_라이브색.npy; produced by the data author, see the per-floor build README",
+      "license_status": "CC-BY-NC-4.0",
+      "publication_permission": "pending",
+      "run_note": "LIO-SAM bundle delivered on USB on 2026-10-20 (building, floor and pipeline from the folder name and the build README)",
+      "integrated_from": "2026-10-20-107f0a6d61ab"
+    }
+  ]
+}

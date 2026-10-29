@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470" width="1280" height="470" role="img" aria-labelledby="t d">
+<title id="t">LIO-SAM pipeline (schematic)</title>
+<desc id="d">IMU preintegration de-skews scans and gives an initial guess; edge and planar features feed LiDAR odometry against sub-keyframes; keyframe states are joined by IMU, odometry and loop-closure factors in an iSAM2 factor graph whose optimised poses build the global map. GPS is supported by the algorithm but not used here.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#46505d"/></marker><marker id="art" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0d7c86"/></marker><marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c98a1b"/></marker></defs>
+<rect width="1280" height="470" fill="#ffffff"/>
+<text x="40" y="52" font-size="22" font-weight="700" fill="#131a24" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">LIO-SAM processing flow</text>
+<text x="40" y="78" font-size="14" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">as used for 4F (LiDAR + IMU; no GPS)</text>
+<rect x="40" y="130" width="170" height="74" rx="12" fill="#dff0f0"/>
+<text x="125.0" y="161.0" font-size="16" font-weight="650" fill="#06555c" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">LiDAR</text>
+<text x="125.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">scans</text>
+<rect x="40" y="300" width="170" height="74" rx="12" fill="#f6e3bf"/>
+<text x="125.0" y="331.0" font-size="16" font-weight="650" fill="#6b4500" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">IMU</text>
+<text x="125.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">ω_m, a_m</text>
+<rect x="260" y="300" width="210" height="74" rx="12" fill="#eef2f4"/>
+<text x="365.0" y="331.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">IMU preintegration</text>
+<text x="365.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">ΔR, Δv, Δp</text>
+<rect x="260" y="130" width="210" height="74" rx="12" fill="#eef2f4"/>
+<text x="365.0" y="161.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Deskew + features</text>
+<text x="365.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">edge / planar</text>
+<rect x="520" y="130" width="220" height="74" rx="12" fill="#eef2f4"/>
+<text x="630.0" y="161.0" font-size="16" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">LiDAR odometry</text>
+<text x="630.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">scan-to-sub-keyframes</text>
+<rect x="790" y="116" width="240" height="272" rx="16" fill="#e4e9f1"/>
+<text x="910" y="146" font-size="16" font-weight="700" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Factor graph (iSAM2)</text>
+<circle cx="826" cy="250" r="15" fill="#ffffff" stroke="#1b2c45" stroke-width="2"/>
+<text x="826" y="255" font-size="12" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X0</text>
+<circle cx="876" cy="250" r="15" fill="#ffffff" stroke="#1b2c45" stroke-width="2"/>
+<text x="876" y="255" font-size="12" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X1</text>
+<line x1="841" y1="250" x2="861" y2="250" stroke="#1b2c45" stroke-width="2"/>
+<circle cx="926" cy="250" r="15" fill="#ffffff" stroke="#1b2c45" stroke-width="2"/>
+<text x="926" y="255" font-size="12" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X2</text>
+<line x1="891" y1="250" x2="911" y2="250" stroke="#1b2c45" stroke-width="2"/>
+<circle cx="976" cy="250" r="15" fill="#ffffff" stroke="#1b2c45" stroke-width="2"/>
+<text x="976" y="255" font-size="12" font-weight="700" fill="#131a24" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace">X3</text>
+<line x1="941" y1="250" x2="961" y2="250" stroke="#1b2c45" stroke-width="2"/>
+<path d="M826 266 C 840 320, 962 320, 976 266" fill="none" stroke="#c98a1b" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="901" y="334" font-size="12" font-weight="650" fill="#7a4f00" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">loop factor</text>
+<text x="910" y="196" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">keyframe states</text>
+<rect x="520" y="300" width="220" height="74" rx="12" fill="#f6e3bf"/>
+<text x="630.0" y="331.0" font-size="16" font-weight="650" fill="#6b4500" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Loop detection</text>
+<text x="630.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">nearby key pose + ICP</text>
+<rect x="1076" y="130" width="170" height="74" rx="12" fill="#eef2f4"/>
+<text x="1161.0" y="161.0" font-size="15" font-weight="650" fill="#131a24" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Optimised poses</text>
+<text x="1161.0" y="182.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">all keyframes</text>
+<rect x="1076" y="300" width="170" height="74" rx="12" fill="#dff0f0"/>
+<text x="1161.0" y="331.0" font-size="16" font-weight="650" fill="#06555c" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">Global map</text>
+<text x="1161.0" y="352.0" font-size="12.5" font-weight="400" fill="#46505d" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">re-projected clouds</text>
+<rect x="830" y="406" width="160" height="40" rx="10" fill="#ffffff" stroke="#c5ccd3" stroke-dasharray="4 3"/>
+<text x="910" y="431" font-size="12.5" font-weight="600" fill="#6b7581" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">GPS factor · not used</text>
+<line x1="910" y1="404" x2="910" y2="390" stroke="#c5ccd3" stroke-width="1.5" stroke-dasharray="3 3"/>
+<line x1="212" y1="167" x2="256" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="472" y1="167" x2="516" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="212" y1="337" x2="256" y2="337" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M365 298 L365 208" fill="none" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="372" y="262" font-size="12" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">deskew, initial guess</text>
+<line x1="742" y1="167" x2="786" y2="200" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="744" y="222" font-size="11.5" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">odometry factor</text>
+<path d="M472 350 C 600 410, 760 360, 820 280" fill="none" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="600" y="412" font-size="11.5" font-weight="400" fill="#6b7581" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">IMU factor</text>
+<line x1="742" y1="337" x2="786" y2="300" stroke="#c98a1b" stroke-width="1.6" marker-end="url(#ara)"/>
+<line x1="1032" y1="200" x2="1072" y2="167" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<line x1="1161" y1="206" x2="1161" y2="296" stroke="#46505d" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="40" y="452" font-size="13" font-weight="400" fill="#46505d" text-anchor="start" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">The optimised IMU bias is fed back to preintegration. GPS is supported by LIO-SAM but not used for this indoor dataset.</text>
+<rect x="1138" y="18" width="118" height="26" rx="5" fill="#ffffff" stroke="#c5ccd3" stroke-dasharray="4 3"/>
+<text x="1197" y="36" font-size="12" font-weight="700" fill="#6b7581" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" letter-spacing="1.6">SCHEMATIC</text>
+</svg>
