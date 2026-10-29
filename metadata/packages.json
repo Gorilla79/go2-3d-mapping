@@ -201,5 +201,174 @@
       "statement": "Publication of the web view, rendered figures, research map file, trajectory (where one exists) and building set. Only geometric traces of people remain (no camera imagery); 4F cleaning candidates v1/v2 are not used."
     }
   ],
-  "hosted": []
+  "hosted": [
+    {
+      "id": "information.2F.fast-lio.release-0.1.zip",
+      "name": "information.2F.fast-lio.release-0.1.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.2F.fast-lio.release-0.1.zip",
+      "bytes": 19402845,
+      "sha256": "9d8556a12708d958275cd0014e82aade909dc7341a81e1b8bdf55a207b0b2c1c"
+    },
+    {
+      "entry": "2F-canonical-npy",
+      "name": "information.2F.fast-lio.release-0.1.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.2F.fast-lio.release-0.1.npy",
+      "bytes": 8107628,
+      "sha256": "58fc33cb158df51469a1d79306af1d7695382eabb8ee3d2b2457bc89b1d966fb"
+    },
+    {
+      "id": "information.3F.fast-lio.release-0.1.zip",
+      "name": "information.3F.fast-lio.release-0.1.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.3F.fast-lio.release-0.1.zip",
+      "bytes": 22752489,
+      "sha256": "2f82646650583804c9d5b41b1c987973f3866569380ae340f8f6ac24e5f46ed9"
+    },
+    {
+      "entry": "3F-canonical-npy",
+      "name": "information.3F.fast-lio.release-0.1.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.3F.fast-lio.release-0.1.npy",
+      "bytes": 9827660,
+      "sha256": "6bcfb97fb6d5c1a7b65a232f01192dd9c6de013415474841873e980fd4224546"
+    },
+    {
+      "id": "information.6F.fast-lio.release-0.1.zip",
+      "name": "information.6F.fast-lio.release-0.1.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.6F.fast-lio.release-0.1.zip",
+      "bytes": 16020537,
+      "sha256": "389beb9734e9be558cd26f0877a15f4f57be34ddc6812034e3addfbc6ae90f0d"
+    },
+    {
+      "entry": "6F-canonical-npy",
+      "name": "information.6F.fast-lio.release-0.1.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.6F.fast-lio.release-0.1.npy",
+      "bytes": 6562904,
+      "sha256": "266203d7111f3e26120d5c15770bfc7cb4fbc34ce4dc48ad59fb316accb1f0f5"
+    },
+    {
+      "id": "information.8F.fast-lio.release-0.1.zip",
+      "name": "information.8F.fast-lio.release-0.1.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.8F.fast-lio.release-0.1.zip",
+      "bytes": 15966861,
+      "sha256": "1f79de160f194c9c7728255b6e0767c9b9ab36c32d9f8216c70ba3b51abcb413"
+    },
+    {
+      "entry": "8F-canonical-npy",
+      "name": "information.8F.fast-lio.release-0.1.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.8F.fast-lio.release-0.1.npy",
+      "bytes": 6536192,
+      "sha256": "562d7ead95d05619b7cadd5172d9a8c9d918447dc99c1e77730495884022d2fa"
+    },
+    {
+      "id": "information.4F.lio-sam.release-0.1.zip",
+      "name": "information.4F.lio-sam.release-0.1.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.4F.lio-sam.release-0.1.zip",
+      "bytes": 890779673,
+      "sha256": "7c110515cc95fdb3e7dc52ba79466bff965b01329bbcb72b0cee162b1904bf02"
+    },
+    {
+      "entry": "4F-canonical-npy",
+      "name": "information.4F.lio-sam.release-0.1.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.4F.lio-sam.release-0.1.npy",
+      "bytes": 832000128,
+      "sha256": "a149c40f118e622cb40130a8ed8cb69e2c107fc3849145097aa5c2569f2fa131"
+    },
+    {
+      "entry": "4F-trajectory-liosam",
+      "name": "information.4F.lio-sam.release-0.1.poses-liosam.npz",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.4F.lio-sam.release-0.1.poses-liosam.npz",
+      "bytes": 257566,
+      "sha256": "d300541afeebc125e3c991ec3d0241301e29a9865f50892a695c2b8ed5f3a435"
+    },
+    {
+      "id": "information.1F.lio-sam.usb-2026-10-20.zip",
+      "name": "information.1F.lio-sam.usb-2026-10-20.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.1F.lio-sam.usb-2026-10-20.zip",
+      "bytes": 552209611,
+      "sha256": "1734a449f33bfbaadded87e60ba6ce81103445a80cccdcfa9f05f239b2bc122a"
+    },
+    {
+      "entry": "information.1F.lio-sam.usb-2026-10-20-canonical-npy",
+      "name": "information.1F.lio-sam.usb-2026-10-20.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.1F.lio-sam.usb-2026-10-20.npy",
+      "bytes": 498680096,
+      "sha256": "5dd314156ca043eb228ac73a847c21aebe8be28ef21f384012c83ceaa18d74a5"
+    },
+    {
+      "id": "information.2F.lio-sam.usb-2026-10-20.zip",
+      "name": "information.2F.lio-sam.usb-2026-10-20.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.2F.lio-sam.usb-2026-10-20.zip",
+      "bytes": 304965921,
+      "sha256": "8728f3130ea07ee4cae194579c0e3dece18cea0b11cbfbfbb35e9b4aa8f32ada"
+    },
+    {
+      "entry": "information.2F.lio-sam.usb-2026-10-20-canonical-npy",
+      "name": "information.2F.lio-sam.usb-2026-10-20.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.2F.lio-sam.usb-2026-10-20.npy",
+      "bytes": 252818912,
+      "sha256": "92a638be6599700966a9e37e9cdebb0836a9489192a92cfa8477a03d9ccb36c8"
+    },
+    {
+      "id": "information.3F.lio-sam.usb-2026-10-20.zip",
+      "name": "information.3F.lio-sam.usb-2026-10-20.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.3F.lio-sam.usb-2026-10-20.zip",
+      "bytes": 1041966300,
+      "sha256": "04c3b4a7fccf1443419b92ee61115cd2f5d8a227752daa1f0b47795728ef8f02"
+    },
+    {
+      "entry": "information.3F.lio-sam.usb-2026-10-20-canonical-npy",
+      "name": "information.3F.lio-sam.usb-2026-10-20.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.3F.lio-sam.usb-2026-10-20.npy",
+      "bytes": 989266048,
+      "sha256": "d79101da34df2d275c79ee1d039f79666e39dbd0c39506d4716454a0f3d11b2e"
+    },
+    {
+      "id": "information.5F.lio-sam.usb-2026-10-20.zip",
+      "name": "information.5F.lio-sam.usb-2026-10-20.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.5F.lio-sam.usb-2026-10-20.zip",
+      "bytes": 559577038,
+      "sha256": "f4b931ef28329f24b000abe730ce6b5bc6eae75c674d7afa4e2507dd8302f1de"
+    },
+    {
+      "entry": "information.5F.lio-sam.usb-2026-10-20-canonical-npy",
+      "name": "information.5F.lio-sam.usb-2026-10-20.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.5F.lio-sam.usb-2026-10-20.npy",
+      "bytes": 508031168,
+      "sha256": "6306cf80e3e89805e2317e5c636a2e18a32bb72c91f02034f8fe7d75176bb097"
+    },
+    {
+      "id": "engineering.1F.lio-sam.usb-2026-10-20.zip",
+      "name": "engineering.1F.lio-sam.usb-2026-10-20.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/engineering.1F.lio-sam.usb-2026-10-20.zip",
+      "bytes": 847287681,
+      "sha256": "d7b394375120e68be214dada56e2520defe47bd2bfc52471e77b7f5b3c991b2e"
+    },
+    {
+      "entry": "engineering.1F.lio-sam.usb-2026-10-20-canonical-npy",
+      "name": "engineering.1F.lio-sam.usb-2026-10-20.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/engineering.1F.lio-sam.usb-2026-10-20.npy",
+      "bytes": 794614336,
+      "sha256": "b55bb11a746314077db5301168dfdeb8ff977673e5b6199271fe735d1c73bdff"
+    },
+    {
+      "id": "industry-cooperation.1F.lio-sam.usb-2026-10-20.zip",
+      "name": "industry-cooperation.1F.lio-sam.usb-2026-10-20.zip",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/industry-cooperation.1F.lio-sam.usb-2026-10-20.zip",
+      "bytes": 830237274,
+      "sha256": "64e5e929665f5caddb89655c32a537d8e021f7282e330ad391e8f032b3869d15"
+    },
+    {
+      "entry": "industry-cooperation.1F.lio-sam.usb-2026-10-20-canonical-npy",
+      "name": "industry-cooperation.1F.lio-sam.usb-2026-10-20.npy",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/industry-cooperation.1F.lio-sam.usb-2026-10-20.npy",
+      "bytes": 779928544,
+      "sha256": "107f0a6d61ab118cacf3c76426a723a32258b0a1900b56e11a66d00384d5fcfb"
+    },
+    {
+      "entry": "metadata-frames",
+      "name": "go2-3d-mapping.frames.md",
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/go2-3d-mapping.frames.md",
+      "bytes": 1555,
+      "sha256": "85098f79c5ccfc1a548a77e6f2f1cc20501790cae1eccd7cf910fa08774c5d81"
+    }
+  ]
 }

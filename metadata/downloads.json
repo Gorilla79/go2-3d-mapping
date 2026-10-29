@@ -13,9 +13,9 @@
       "points": 26000000,
       "size": 832000128,
       "sha256": "a149c40f118e622cb40130a8ed8cb69e2c107fc3849145097aa5c2569f2fa131",
-      "url": null,
-      "status": "preparing",
-      "note": "Canonical 4F map. Hosted outside the Git repository once release review is complete."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.4F.lio-sam.release-0.1.npy",
+      "status": "available",
+      "note": "Canonical 4F map. Hosted outside the Git repository once release review is complete. Hosted as a release asset (information.4F.lio-sam.release-0.1.npy)."
     },
     {
       "id": "4F-canonical-ply",
@@ -58,9 +58,9 @@
       "points": 4013,
       "size": 257566,
       "sha256": "d300541afeebc125e3c991ec3d0241301e29a9865f50892a695c2b8ed5f3a435",
-      "url": null,
-      "status": "preparing",
-      "note": "LIO-SAM trajectory; source of the web trajectory polyline."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.4F.lio-sam.release-0.1.poses-liosam.npz",
+      "status": "available",
+      "note": "LIO-SAM trajectory; source of the web trajectory polyline. Hosted as a release asset (information.4F.lio-sam.release-0.1.poses-liosam.npz)."
     },
     {
       "id": "4F-trajectory-fastlio",
@@ -88,9 +88,9 @@
       "points": 675625,
       "size": 8107628,
       "sha256": "58fc33cb158df51469a1d79306af1d7695382eabb8ee3d2b2457bc89b1d966fb",
-      "url": null,
-      "status": "preparing",
-      "note": "Processed cleaned FAST-LIO map (earliest version available)."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.2F.fast-lio.release-0.1.npy",
+      "status": "available",
+      "note": "Processed cleaned FAST-LIO map (earliest version available). Hosted as a release asset (information.2F.fast-lio.release-0.1.npy)."
     },
     {
       "id": "2F-canonical-ply",
@@ -133,9 +133,9 @@
       "points": 818961,
       "size": 9827660,
       "sha256": "6bcfb97fb6d5c1a7b65a232f01192dd9c6de013415474841873e980fd4224546",
-      "url": null,
-      "status": "preparing",
-      "note": "Processed cleaned FAST-LIO map (earliest version available)."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.3F.fast-lio.release-0.1.npy",
+      "status": "available",
+      "note": "Processed cleaned FAST-LIO map (earliest version available). Hosted as a release asset (information.3F.fast-lio.release-0.1.npy)."
     },
     {
       "id": "3F-canonical-ply",
@@ -178,9 +178,9 @@
       "points": 546898,
       "size": 6562904,
       "sha256": "266203d7111f3e26120d5c15770bfc7cb4fbc34ce4dc48ad59fb316accb1f0f5",
-      "url": null,
-      "status": "preparing",
-      "note": "Processed cleaned FAST-LIO map (earliest version available)."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.6F.fast-lio.release-0.1.npy",
+      "status": "available",
+      "note": "Processed cleaned FAST-LIO map (earliest version available). Hosted as a release asset (information.6F.fast-lio.release-0.1.npy)."
     },
     {
       "id": "6F-canonical-ply",
@@ -223,9 +223,9 @@
       "points": 544672,
       "size": 6536192,
       "sha256": "562d7ead95d05619b7cadd5172d9a8c9d918447dc99c1e77730495884022d2fa",
-      "url": null,
-      "status": "preparing",
-      "note": "Processed cleaned FAST-LIO map (earliest version available)."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.8F.fast-lio.release-0.1.npy",
+      "status": "available",
+      "note": "Processed cleaned FAST-LIO map (earliest version available). Hosted as a release asset (information.8F.fast-lio.release-0.1.npy)."
     },
     {
       "id": "8F-canonical-ply",
@@ -323,13 +323,13 @@
       "points": null,
       "size": 1555,
       "sha256": "85098f79c5ccfc1a548a77e6f2f1cc20501790cae1eccd7cf910fa08774c5d81",
-      "url": null,
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/go2-3d-mapping.frames.md",
       "id": "metadata-frames",
       "category": "metadata",
       "artifact": "metadata/frames.md",
       "kind": "metadata",
       "format": "Markdown — coordinate frames and conventions",
-      "status": "ready-for-release",
+      "status": "available",
       "note": "IMU mounting, FAST-LIO mirror, T_W_L = T_W_I · T_I_L. In the release package; content also on the Reproducibility page."
     },
     {
@@ -927,9 +927,9 @@
       "points": 24831694,
       "size": 794614336,
       "sha256": "b55bb11a746314077db5301168dfdeb8ff977673e5b6199271fe735d1c73bdff",
-      "url": null,
-      "status": "preparing",
-      "note": "Kept in a private store; not downloadable."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/engineering.1F.lio-sam.usb-2026-10-20.npy",
+      "status": "available",
+      "note": "Kept in a private store; not downloadable. Hosted as a release asset (engineering.1F.lio-sam.usb-2026-10-20.npy)."
     },
     {
       "id": "engineering.1F.lio-sam.usb-2026-10-20-trajectory",
@@ -1080,9 +1080,9 @@
       "points": 24372763,
       "size": 779928544,
       "sha256": "107f0a6d61ab118cacf3c76426a723a32258b0a1900b56e11a66d00384d5fcfb",
-      "url": null,
-      "status": "preparing",
-      "note": "Kept in a private store; not downloadable."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/industry-cooperation.1F.lio-sam.usb-2026-10-20.npy",
+      "status": "available",
+      "note": "Kept in a private store; not downloadable. Hosted as a release asset (industry-cooperation.1F.lio-sam.usb-2026-10-20.npy)."
     },
     {
       "id": "industry-cooperation.1F.lio-sam.usb-2026-10-20-trajectory",
@@ -1233,9 +1233,9 @@
       "points": 15583749,
       "size": 498680096,
       "sha256": "5dd314156ca043eb228ac73a847c21aebe8be28ef21f384012c83ceaa18d74a5",
-      "url": null,
-      "status": "preparing",
-      "note": "Kept in a private store; not downloadable."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.1F.lio-sam.usb-2026-10-20.npy",
+      "status": "available",
+      "note": "Kept in a private store; not downloadable. Hosted as a release asset (information.1F.lio-sam.usb-2026-10-20.npy)."
     },
     {
       "id": "information.1F.lio-sam.usb-2026-10-20-trajectory",
@@ -1386,9 +1386,9 @@
       "points": 7900587,
       "size": 252818912,
       "sha256": "92a638be6599700966a9e37e9cdebb0836a9489192a92cfa8477a03d9ccb36c8",
-      "url": null,
-      "status": "preparing",
-      "note": "Kept in a private store; not downloadable."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.2F.lio-sam.usb-2026-10-20.npy",
+      "status": "available",
+      "note": "Kept in a private store; not downloadable. Hosted as a release asset (information.2F.lio-sam.usb-2026-10-20.npy)."
     },
     {
       "id": "information.2F.lio-sam.usb-2026-10-20-trajectory",
@@ -1539,9 +1539,9 @@
       "points": 30914560,
       "size": 989266048,
       "sha256": "d79101da34df2d275c79ee1d039f79666e39dbd0c39506d4716454a0f3d11b2e",
-      "url": null,
-      "status": "preparing",
-      "note": "Kept in a private store; not downloadable."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.3F.lio-sam.usb-2026-10-20.npy",
+      "status": "available",
+      "note": "Kept in a private store; not downloadable. Hosted as a release asset (information.3F.lio-sam.usb-2026-10-20.npy)."
     },
     {
       "id": "information.3F.lio-sam.usb-2026-10-20-trajectory",
@@ -1692,9 +1692,9 @@
       "points": 15875970,
       "size": 508031168,
       "sha256": "6306cf80e3e89805e2317e5c636a2e18a32bb72c91f02034f8fe7d75176bb097",
-      "url": null,
-      "status": "preparing",
-      "note": "Kept in a private store; not downloadable."
+      "url": "https://github.com/Gorilla79/go2-3d-mapping/releases/download/maps-0.1.0/information.5F.lio-sam.usb-2026-10-20.npy",
+      "status": "available",
+      "note": "Kept in a private store; not downloadable. Hosted as a release asset (information.5F.lio-sam.usb-2026-10-20.npy)."
     },
     {
       "id": "information.5F.lio-sam.usb-2026-10-20-trajectory",
