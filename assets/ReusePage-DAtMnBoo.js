@@ -1,4 +1,4 @@
-import{t as e}from"./jsx-runtime-DHXBON9B.js";import{N as t,j as n}from"./downloads-HF3f50YO.js";import{lt as r,ot as i,w as a}from"./index-Cm9niuXV.js";var o=e(),s=e=>`import numpy as np, open3d as o3d
+import{t as e}from"./jsx-runtime-DHXBON9B.js";import{N as t,j as n}from"./downloads-OIkYKyvg.js";import{lt as r,ot as i,w as a}from"./index-CBCtzK09.js";var o=e(),s=e=>`import numpy as np, open3d as o3d
 pts = np.load("3F_map.npy")[:, :3]            # ${e}
 pcd = o3d.geometry.PointCloud(o3d.utility.Vector3dVector(pts))
 pcd = pcd.voxel_down_sample(0.05)
